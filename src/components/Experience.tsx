@@ -2,28 +2,28 @@
 
 const experiences = [
   {
-    role: "Product Manager — AI Products",
-    company: "Freelance / Contract",
-    period: "2024 – Present",
-    description: "Building AI-enabled products including VIRELLE (AI matchmaking), SOVA (AI travel companion), and RouteForge AI (logistics optimization). Conducting research on RAG architectures.",
+    role: "AI/ML Intern",
+    company: "FlyRank",
+    period: "July 2026 · Remote",
+    description: "Developing AI-powered solutions using ML and LLMs for real-world business applications. Building AI workflows with Python, prompt engineering, RAG, model evaluation, and LLM-based automation.",
   },
   {
     role: "Product Manager",
-    company: "Aurigo Technologies",
-    period: "2022 – 2024",
-    description: "Led product strategy for infrastructure technology SaaS platform. Drove 18% feature adoption gain through data-driven product decisions.",
+    company: "Aurigo Software Technologies",
+    period: "Jan 2023 – Dec 2025",
+    description: "Owned enterprise SaaS roadmaps. Increased feature adoption by 18% within two quarters. Reduced backlog cycle time by 22%. Improved sprint velocity by 15%. Built Power BI dashboards improving executive reporting efficiency by 30%.",
   },
   {
-    role: "Product Manager",
+    role: "Associate Product Manager",
     company: "Zenefits",
-    period: "2020 – 2022",
-    description: "Managed B2B SaaS HR platform. Ran A/B experiments contributing to $3M revenue impact.",
+    period: "Jul 2019 – Jan 2023",
+    description: "Supported roadmap planning and sprint coordination. Designed A/B experiments resulting in 15% conversion uplift and ~$3M annual revenue impact. Built KPI dashboards reducing churn by 4%.",
   },
   {
-    role: "Product Manager",
-    company: "Blackstone / Permanent TSB",
-    period: "2018 – 2020",
-    description: "Product management for banking and financial services technology.",
+    role: "Inside Sales Manager",
+    company: "Simplilearn",
+    period: "Jul 2018 – Dec 2018",
+    description: "Managed outbound sales pipelines for professional certification programmes. Conducted needs analysis and positioned solutions aligned with customer goals.",
   },
 ];
 
