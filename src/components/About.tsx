@@ -1,66 +1,35 @@
 "use client";
 
-import Image from "next/image";
-import ScrollReveal from "./ScrollReveal";
-
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 max-w-[1200px] mx-auto">
-      <ScrollReveal>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="text-xs text-muted-light uppercase tracking-widest mb-4">01 — About</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              A bit about me.
-            </h2>
-            <div className="space-y-4 text-muted leading-relaxed">
-              <p>
-                I&apos;m a Product Manager with 6+ years of experience across B2B SaaS, HRTech,
-                infrastructure technology, and AI-enabled products.
-              </p>
-              <p>
-                My work sits at the intersection of product strategy, analytics, and emerging
-                AI technologies. I enjoy transforming complex business challenges into practical,
-                user-focused solutions.
-              </p>
-              <p>
-                Currently pursuing an MSc in Artificial Intelligence for Business at
-                National College of Ireland, while building AI products and conducting
-                research on RAG architectures.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-6">
-            {/* Photo */}
-            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-md border border-border mb-2">
-              <Image
-                src="/images/profile-about.png"
-                alt="Rashmi Manjunath"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <MetricCard number="6+" label="Years in Product" />
-            <MetricCard number="18%" label="Feature Adoption Gain" detail="Aurigo Technologies" />
-            <MetricCard number="$3M" label="Revenue Impact" detail="Zenefits A/B Experiments" />
-            <MetricCard number="4" label="AI Products Built" />
-          </div>
-        </div>
-      </ScrollReveal>
-    </section>
-  );
-}
-
-function MetricCard({ number, label, detail }: { number: string; label: string; detail?: string }) {
-  return (
-    <div className="flex items-baseline gap-4 p-4 rounded-lg bg-surface">
-      <span className="text-3xl font-bold text-accent">{number}</span>
-      <div>
-        <p className="text-sm font-medium">{label}</p>
-        {detail && <p className="text-xs text-muted-light">{detail}</p>}
+    <section id="about" className="py-16 px-8 max-w-4xl mx-auto">
+      <h2 className="text-2xl font-bold border-b border-gray-200 pb-2 mb-6">About</h2>
+      <div className="space-y-4 text-gray-600 leading-relaxed">
+        <p>
+          I&apos;m a Product Manager with 6+ years of experience across B2B SaaS, HRTech,
+          infrastructure technology, and AI-enabled products. My work sits at the
+          intersection of product strategy, analytics, and emerging AI technologies.
+        </p>
+        <p>
+          I enjoy transforming complex business challenges into practical,
+          user-focused solutions. Currently pursuing an MSc in Artificial Intelligence
+          for Business at National College of Ireland, while building AI products
+          and conducting research on RAG architectures.
+        </p>
+        <p>
+          Previously at Aurigo Technologies, Zenefits, and Blackstone, I&apos;ve driven
+          feature adoption gains of 18% and revenue impact of $3M through data-driven
+          product decisions.
+        </p>
       </div>
-    </div>
+
+      <div className="mt-8">
+        <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Education</h3>
+        <div className="space-y-2 text-sm text-gray-600">
+          <p><span className="font-medium">MSc Artificial Intelligence for Business</span> — National College of Ireland (2024–2025)</p>
+          <p><span className="font-medium">B.E. Computer Science</span> — Visvesvaraya Technological University (2014–2018)</p>
+        </div>
+      </div>
+    </section>
   );
 }

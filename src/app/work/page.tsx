@@ -1,76 +1,62 @@
 "use client";
 
 import Link from "next/link";
-import ScrollReveal from "@/components/ScrollReveal";
 
 const projects = [
   {
     slug: "virelle",
     title: "VIRELLE",
-    subtitle: "The Intelligent Hospitality Organisation",
+    subtitle: "AI-powered matchmaking platform with behavioral science and NLP",
     tags: ["AI Agents", "MCP", "FastAPI", "React"],
   },
   {
     slug: "sova",
     title: "SOVA",
-    subtitle: "Calm Self-Reflection Product",
+    subtitle: "Autonomous AI travel companion — product strategy and GTM",
     tags: ["Product Strategy", "RAG", "LLM"],
   },
   {
     slug: "routeforge",
     title: "RouteForge AI",
-    subtitle: "Intelligent AI Adoption Platform",
+    subtitle: "AI-powered logistics optimization engine",
     tags: ["AI Strategy", "React", "TypeScript"],
   },
   {
     slug: "digital-story",
     title: "Digital Story",
-    subtitle: "Interactive Storytelling Platform",
+    subtitle: "Human-AI collaboration in personal safety and narrative generation",
     tags: ["React", "TypeScript", "Lovable AI"],
   },
 ];
 
 export default function WorkPage() {
   return (
-    <div className="min-h-screen pt-24 md:pt-32 px-6 md:px-12 max-w-[1400px] mx-auto">
-      <ScrollReveal>
-        <p className="text-[10px] tracking-[0.3em] uppercase text-muted/60 mb-4">
-          Selected Work
-        </p>
-        <h1 className="font-[family-name:var(--font-playfair)] text-5xl md:text-7xl font-medium mb-16 md:mb-24">
-          Products I&apos;ve built.
-        </h1>
-      </ScrollReveal>
+    <div className="min-h-screen pt-24 px-8 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-2">Selected Work</h1>
+      <p className="text-gray-500 text-sm mb-10">Case studies from products I&apos;ve built.</p>
 
       <div className="space-y-4">
-        {projects.map((project, i) => (
-          <ScrollReveal key={project.slug} delay={i * 0.1}>
-            <Link
-              href={`/work/${project.slug}`}
-              className="group block border border-border hover:border-border-hover transition-all duration-500 p-8 md:p-10"
-            >
-              <span className="text-[10px] tracking-[0.3em] text-muted/40 uppercase mb-4 block">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-5xl font-medium mb-3 group-hover:tracking-wide transition-all duration-500">
-                {project.title}
-              </h2>
-              <p className="text-sm text-muted mb-6">{project.subtitle}</p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-[10px] tracking-[0.15em] uppercase px-3 py-1.5 border border-border text-muted/50"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <span className="text-xs tracking-[0.15em] uppercase text-accent/60 group-hover:text-accent transition-colors duration-300">
-                View Case Study →
-              </span>
-            </Link>
-          </ScrollReveal>
+        {projects.map((project) => (
+          <Link
+            key={project.slug}
+            href={`/work/${project.slug}`}
+            className="group block border border-gray-200 rounded-lg hover:shadow-md transition-all p-6"
+          >
+            <h2 className="text-xl font-bold mb-1 group-hover:text-blue-600 transition-colors">
+              {project.title}
+            </h2>
+            <p className="text-sm text-gray-600 mb-3">{project.subtitle}</p>
+            <div className="flex flex-wrap gap-1.5 mb-3">
+              {project.tags.map((tag) => (
+                <span key={tag} className="text-xs bg-gray-100 px-2 py-0.5 rounded">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <span className="text-xs text-gray-400 group-hover:text-blue-600 transition-colors">
+              View Case Study →
+            </span>
+          </Link>
         ))}
       </div>
     </div>

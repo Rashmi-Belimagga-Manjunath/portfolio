@@ -1,107 +1,69 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
-  { label: "Writing", href: "#writing" },
-  { label: "Research", href: "#research" },
-  { label: "Contact", href: "#contact" },
+  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
-  }, [mobileOpen]);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
-      <motion.header
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-white/90 backdrop-blur-md border-b border-border shadow-sm"
-            : "bg-transparent"
-        }`}
-      >
-        <nav className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#" className="text-base font-semibold text-foreground">
-            Rashmi Manjunath
-          </a>
+      {/* Desktop sidebar */}
+      <nav className="hidden lg:flex fixed left-0 top-0 h-screen w-64 flex-col justify-between px-8 py-10 border-r border-gray-200 bg-white z-50">
+        <div>
+          <a href="/" className="text-xl font-bold">Rashmi Manjunath</a>
+        </div>
+        <div className="flex flex-col gap-4">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm text-gray-600 hover:text-black transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+        <div className="text-xs text-gray-400">
+          © 2026 · Rashmi Manjunath
+        </div>
+      </nav>
 
-          {/* Desktop */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm text-muted hover:text-foreground transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+      {/* Mobile top bar */}
+      <nav className="lg:hidden fixed top-0 left-0 right-0 flex items-center justify-between px-6 py-4 bg-white border-b border-gray-200 z-50">
+        <a href="/" className="text-lg font-bold">Rashmi</a>
+        <button onClick={() => setOpen(!open)} className="text-gray-600">
+          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {open ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+      </nav>
 
-          {/* Mobile */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden flex flex-col gap-1.5 w-6"
-            aria-label="Toggle menu"
-          >
-            <motion.span
-              animate={mobileOpen ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
-              className="block w-full h-[1.5px] bg-foreground origin-center"
-            />
-            <motion.span
-              animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
-              className="block w-full h-[1.5px] bg-foreground"
-            />
-            <motion.span
-              animate={mobileOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
-              className="block w-full h-[1.5px] bg-foreground origin-center"
-            />
-          </button>
-        </nav>
-      </motion.header>
-
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-6"
-          >
-            {navLinks.map((link, i) => (
-              <motion.a
-                key={link.label}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.05 }}
-                className="text-lg text-muted hover:text-foreground transition-colors"
-              >
-                {link.label}
-              </motion.a>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Mobile menu */}
+      {open && (
+        <div className="lg:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-6">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="text-lg text-gray-700 hover:text-black"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
     </>
   );
 }
