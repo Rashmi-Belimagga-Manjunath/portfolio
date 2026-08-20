@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --muted: #6b7280;
-  --muted-light: #9ca3af;
-  --border: #e5e7eb;
-  --surface: #f9fafb;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap');
 
-html {
-  scroll-behavior: smooth;
+html, body, #root {
+  background: #0C0C0C;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Kanit', sans-serif;
+  color: #D7E2EA;
+  overflow-x: clip;
 }
 
-::selection {
-  background: #dbeafe;
-  color: #1e40af;
+* {
+  box-sizing: border-box;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
