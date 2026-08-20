@@ -10,8 +10,7 @@ const roles = [
     location: "Remote",
     highlights: [
       "Developing AI-powered solutions using ML and LLMs for real-world business applications",
-      "Building AI workflows using Python, prompt engineering, RAG, model evaluation, and LLM-based automation",
-      "Integrating ML and LLM capabilities into scalable applications",
+      "Building AI workflows using Python, prompt engineering, RAG, and LLM-based automation",
     ],
   },
   {
@@ -20,11 +19,9 @@ const roles = [
     dates: "Jan 2023 — Dec 2025",
     location: "Bangalore",
     highlights: [
-      "Increased feature adoption by 18% within two quarters by reprioritising roadmap investments based on usage analytics",
-      "Reduced backlog cycle time by 22% through improved refinement, clearer acceptance criteria, and structured sprint planning",
-      "Improved release predictability and sprint velocity by 15% through cross-functional coordination",
-      "Developed Power BI dashboards analysing feature adoption, enhancing executive reporting efficiency by 30%",
-      "Authored PRDs in Confluence across engineering, design, and QA teams",
+      "Increased feature adoption by 18% within two quarters through roadmap reprioritisation",
+      "Reduced backlog cycle time by 22% through improved refinement and sprint planning",
+      "Developed Power BI dashboards enhancing executive reporting efficiency by 30%",
     ],
   },
   {
@@ -33,10 +30,8 @@ const roles = [
     dates: "Jul 2019 — Jan 2023",
     location: "Bangalore",
     highlights: [
-      "Designed and executed A/B experiments resulting in 15% conversion uplift and ~$3M annual revenue impact",
+      "Designed A/B experiments resulting in 15% conversion uplift and ~$3M annual revenue impact",
       "Built KPI dashboards linking product usage to customer behaviour, reducing churn by 4%",
-      "Translated business requirements into user stories and acceptance criteria",
-      "Partnered with customer success to convert user feedback into prioritised backlog improvements",
     ],
   },
   {
@@ -46,61 +41,45 @@ const roles = [
     location: "Bangalore",
     highlights: [
       "Managed outbound sales pipelines for professional certification programmes",
-      "Conducted needs analysis and positioned solutions aligned with customer goals",
     ],
   },
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 md:py-40 px-6 md:px-12 max-w-[1400px] mx-auto">
+    <section className="py-24 px-6 max-w-[1200px] mx-auto">
       <ScrollReveal>
-        <p className="text-[10px] tracking-[0.3em] uppercase text-muted/60 mb-4">
-          Experience
-        </p>
-        <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-medium mb-16 md:mb-24 max-w-2xl">
-          Where I&apos;ve been.
+        <p className="text-xs text-muted-light uppercase tracking-widest mb-4">Experience</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          Where I&apos;ve worked.
         </h2>
       </ScrollReveal>
 
-      <div className="relative">
-        {/* Vertical line */}
-        <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-border" />
-
-        <div className="space-y-0">
-          {roles.map((role, i) => (
-            <ScrollReveal key={role.company} delay={i * 0.1}>
-              <div className="relative pl-8 md:pl-20 py-10 group">
-                {/* Dot */}
-                <div className="absolute left-0 md:left-8 top-12 w-2 h-2 rounded-full bg-muted/30 group-hover:bg-accent transition-colors duration-300 -translate-x-[3.5px]" />
-
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-6">
-                  <div>
-                    <h3 className="text-lg font-medium group-hover:text-accent transition-colors duration-300">
-                      {role.role}
-                    </h3>
-                    <p className="text-sm text-accent/70">{role.company}</p>
-                  </div>
-                  <div className="text-right flex-shrink-0">
-                    <p className="text-xs text-muted/50">{role.dates}</p>
-                    <p className="text-xs text-muted/40">{role.location}</p>
-                  </div>
+      <div className="space-y-4">
+        {roles.map((role, i) => (
+          <ScrollReveal key={role.company} delay={i * 0.1}>
+            <div className="p-6 rounded-xl border border-border bg-white">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
+                <div>
+                  <h3 className="text-base font-semibold">{role.role}</h3>
+                  <p className="text-sm text-accent">{role.company}</p>
                 </div>
-
-                <ul className="space-y-2">
-                  {role.highlights.map((h) => (
-                    <li
-                      key={h}
-                      className="text-sm text-muted/60 leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-1.5 before:h-px before:bg-muted/20"
-                    >
-                      {h}
-                    </li>
-                  ))}
-                </ul>
+                <div className="text-right flex-shrink-0">
+                  <p className="text-xs text-muted-light">{role.dates}</p>
+                  <p className="text-xs text-muted-light">{role.location}</p>
+                </div>
               </div>
-            </ScrollReveal>
-          ))}
-        </div>
+              <ul className="space-y-1.5">
+                {role.highlights.map((h) => (
+                  <li key={h} className="text-sm text-muted flex items-start gap-2">
+                    <span className="text-muted-light mt-1">•</span>
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </ScrollReveal>
+        ))}
       </div>
     </section>
   );

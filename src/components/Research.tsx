@@ -4,85 +4,56 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Research() {
   return (
-    <section id="research" className="py-24 md:py-40 px-6 md:px-12 max-w-[1400px] mx-auto">
+    <section id="research" className="py-24 px-6 max-w-[1200px] mx-auto">
       <ScrollReveal>
-        <p className="text-[10px] tracking-[0.3em] uppercase text-muted/60 mb-4">
-          Research &amp; Speaking
-        </p>
-        <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-medium mb-16 md:mb-24 max-w-2xl">
+        <p className="text-xs text-muted-light uppercase tracking-widest mb-4">Research &amp; Speaking</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Contributing to the conversation.
         </h2>
       </ScrollReveal>
 
-      <div className="space-y-12">
-        {/* Publication */}
+      <div className="space-y-4">
         <ScrollReveal>
-          <div className="border border-border p-8 md:p-12 hover:border-border-hover transition-all duration-500 group">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+          <div className="p-6 md:p-8 rounded-xl border border-border bg-white hover:border-border-hover hover:shadow-md transition-all duration-300">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <div className="max-w-2xl">
-                <p className="text-[10px] tracking-[0.2em] uppercase text-accent/50 mb-3">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent-light text-accent font-medium mb-3 inline-block">
                   Publication
-                </p>
-                <h3 className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl font-medium mb-4 group-hover:text-accent transition-colors duration-300">
+                </span>
+                <h3 className="text-lg font-semibold mb-2">
                   Retrieval-Augmented AI Assistants for Product Documentation Analysis: Supporting Data-Driven Product Backlog Decisions
                 </h3>
-                <p className="text-sm text-muted/60 leading-relaxed mb-4">
-                  Sole-authored paper exploring how RAG-based AI assistants can support product managers in making data-driven backlog decisions. Presented to an international audience of researchers and academics.
+                <p className="text-sm text-muted leading-relaxed">
+                  Sole-authored paper exploring how RAG-based AI assistants can support product managers
+                  in making data-driven backlog decisions.
                 </p>
               </div>
               <div className="flex-shrink-0 text-right">
-                <p className="text-xs text-muted/50 mb-1">EUt+ DATS &amp; STATS 2026 Workshop</p>
-                <p className="text-xs text-muted/50 mb-1">University of Cassino and Southern Lazio</p>
-                <p className="text-xs text-muted/50 mb-1">Open-Access EUt+ Academic Press Proceedings</p>
-                <p className="text-xs text-muted/50">Cassino, Italy</p>
+                <p className="text-xs text-muted-light">EUt+ DATS &amp; STATS 2026</p>
+                <p className="text-xs text-muted-light">University of Cassino, Italy</p>
               </div>
             </div>
           </div>
         </ScrollReveal>
 
-        {/* Speaking */}
         <ScrollReveal delay={0.1}>
-          <div className="border border-border p-8 md:p-12 hover:border-border-hover transition-all duration-500 group">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+          <div className="p-6 md:p-8 rounded-xl border border-border bg-white hover:border-border-hover hover:shadow-md transition-all duration-300">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
               <div className="max-w-2xl">
-                <p className="text-[10px] tracking-[0.2em] uppercase text-accent/50 mb-3">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-green-50 text-green-700 font-medium mb-3 inline-block">
                   Invited Speaker
-                </p>
-                <h3 className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl font-medium mb-4 group-hover:text-accent transition-colors duration-300">
+                </span>
+                <h3 className="text-lg font-semibold mb-2">
                   EUt+ DATS &amp; STATS 2026 Workshop
                 </h3>
-                <p className="text-sm text-muted/60 leading-relaxed mb-4">
-                  Delivered a talk on Retrieval-Augmented AI Assistants for Product Documentation Analysis to an international audience of researchers and academics at the University of Cassino and Southern Lazio, Italy.
+                <p className="text-sm text-muted leading-relaxed">
+                  Delivered a talk to an international audience of researchers and academics at the
+                  University of Cassino and Southern Lazio, Italy.
                 </p>
               </div>
               <div className="flex-shrink-0 text-right">
-                <p className="text-xs text-muted/50 mb-1">European University of Technology</p>
-                <p className="text-xs text-muted/50 mb-1">Academic Workshop</p>
-                <p className="text-xs text-muted/50">2026</p>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* Startup Pitch */}
-        <ScrollReveal delay={0.2}>
-          <div className="border border-border p-8 md:p-12 hover:border-border-hover transition-all duration-500 group">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
-              <div className="max-w-2xl">
-                <p className="text-[10px] tracking-[0.2em] uppercase text-accent/50 mb-3">
-                  Startup Pitch
-                </p>
-                <h3 className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl font-medium mb-4 group-hover:text-accent transition-colors duration-300">
-                  TU Dublin Sustainability Innovation Event
-                </h3>
-                <p className="text-sm text-muted/60 leading-relaxed mb-4">
-                  Pitched an original startup concept focused on sustainability innovation. Shortlisted among top submissions, demonstrating entrepreneurial thinking and ability to communicate complex ideas to a cross-disciplinary panel.
-                </p>
-              </div>
-              <div className="flex-shrink-0 text-right">
-                <p className="text-xs text-muted/50 mb-1">TU Dublin</p>
-                <p className="text-xs text-muted/50 mb-1">Sustainability Innovation</p>
-                <p className="text-xs text-muted/50">Shortlisted</p>
+                <p className="text-xs text-muted-light">European University of Technology</p>
+                <p className="text-xs text-muted-light">2026</p>
               </div>
             </div>
           </div>

@@ -4,45 +4,41 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 md:py-40 px-6 md:px-12 max-w-[1400px] mx-auto">
+    <section id="contact" className="py-24 px-6 max-w-[1200px] mx-auto">
       <ScrollReveal>
-        <p className="text-[10px] tracking-[0.3em] uppercase text-muted/60 mb-4">
-          Let&apos;s Talk
-        </p>
-        <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-7xl font-medium mb-8">
-          Let&apos;s build<br />something.
+        <p className="text-xs text-muted-light uppercase tracking-widest mb-4">Contact</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Let&apos;s connect.
         </h2>
-        <p className="text-lg text-muted/60 max-w-lg mb-16">
-          I&apos;m always interested in conversations about product, AI, research, and the space where they intersect.
+        <p className="text-muted max-w-lg mb-10">
+          I&apos;m always interested in conversations about product, AI, research,
+          and the space where they intersect.
         </p>
       </ScrollReveal>
 
-      <ScrollReveal delay={0.2}>
-        <div className="flex flex-col sm:flex-row gap-6">
+      <ScrollReveal delay={0.1}>
+        <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="mailto:rashmimanjunath95@gmail.com"
-            className="inline-flex items-center gap-3 text-sm tracking-[0.15em] uppercase px-8 py-4 border border-accent/30 text-accent hover:bg-accent hover:text-background transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
           >
-            Email
-            <span className="text-xs">→</span>
+            Email Me →
           </a>
           <a
             href="https://linkedin.com/in/rashmi-manjunath"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 text-sm tracking-[0.15em] uppercase px-8 py-4 border border-border text-muted hover:border-border-hover hover:text-foreground transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm font-medium rounded-lg hover:border-border-hover hover:bg-surface transition-all duration-200"
           >
-            LinkedIn
-            <span className="text-xs">→</span>
+            LinkedIn →
           </a>
           <a
             href="https://github.com/Rashmi-Belimagga-Manjunath"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 text-sm tracking-[0.15em] uppercase px-8 py-4 border border-border text-muted hover:border-border-hover hover:text-foreground transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm font-medium rounded-lg hover:border-border-hover hover:bg-surface transition-all duration-200"
           >
-            GitHub
-            <span className="text-xs">→</span>
+            GitHub →
           </a>
         </div>
       </ScrollReveal>

@@ -4,47 +4,35 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function Education() {
   return (
-    <section className="py-24 md:py-40 px-6 md:px-12 max-w-[1400px] mx-auto">
+    <section className="py-24 px-6 max-w-[1200px] mx-auto bg-surface rounded-2xl">
       <ScrollReveal>
-        <p className="text-[10px] tracking-[0.3em] uppercase text-muted/60 mb-4">
-          Education
-        </p>
-        <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-medium mb-16 md:mb-24 max-w-2xl">
+        <p className="text-xs text-muted-light uppercase tracking-widest mb-4">Education</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Foundation.
         </h2>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border max-w-4xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <ScrollReveal>
-          <div className="bg-background p-8 md:p-10">
-            <p className="text-[10px] tracking-[0.2em] uppercase text-accent/50 mb-3">
-              2026 — 2027
-            </p>
-            <h3 className="text-lg font-medium mb-2">
-              MSc Artificial Intelligence for Business
-            </h3>
-            <p className="text-sm text-muted/60 mb-4">
-              National College of Ireland, Dublin
-            </p>
-            <p className="text-sm text-muted/50 leading-relaxed">
-              Focus on AI product development, RAG architectures, machine learning lifecycle, and responsible AI adoption.
+          <div className="p-6 rounded-xl bg-white border border-border">
+            <p className="text-xs text-muted-light mb-2">2026 — 2027</p>
+            <h3 className="text-lg font-semibold mb-1">MSc Artificial Intelligence for Business</h3>
+            <p className="text-sm text-accent mb-3">National College of Ireland, Dublin</p>
+            <p className="text-sm text-muted leading-relaxed">
+              Focus on AI product development, RAG architectures, machine learning lifecycle,
+              and responsible AI adoption.
             </p>
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <div className="bg-background p-8 md:p-10">
-            <p className="text-[10px] tracking-[0.2em] uppercase text-accent/50 mb-3">
-              2014 — 2018
-            </p>
-            <h3 className="text-lg font-medium mb-2">
-              Bachelor of Engineering — Information Technology
-            </h3>
-            <p className="text-sm text-muted/60 mb-4">
-              Visvesvaraya Technological University (VTU)
-            </p>
-            <p className="text-sm text-muted/50 leading-relaxed">
-              Engineering foundation with focus on information technology systems and software development.
+          <div className="p-6 rounded-xl bg-white border border-border">
+            <p className="text-xs text-muted-light mb-2">2014 — 2018</p>
+            <h3 className="text-lg font-semibold mb-1">Bachelor of Engineering — IT</h3>
+            <p className="text-sm text-accent mb-3">Visvesvaraya Technological University</p>
+            <p className="text-sm text-muted leading-relaxed">
+              Engineering foundation with focus on information technology systems
+              and software development.
             </p>
           </div>
         </ScrollReveal>
