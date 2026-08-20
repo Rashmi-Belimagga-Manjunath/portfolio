@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 export default function About() {
   return (
     <section id="about" className="py-24 px-6 max-w-[1200px] mx-auto">
       <ScrollReveal>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-xs text-muted-light uppercase tracking-widest mb-4">01 — About</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -30,7 +31,17 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 justify-center">
+          <div className="flex flex-col gap-6">
+            {/* Photo */}
+            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-md border border-border mb-2">
+              <Image
+                src="/images/profile-about.png"
+                alt="Rashmi Manjunath"
+                fill
+                className="object-cover"
+              />
+            </div>
+
             <MetricCard number="6+" label="Years in Product" />
             <MetricCard number="18%" label="Feature Adoption Gain" detail="Aurigo Technologies" />
             <MetricCard number="$3M" label="Revenue Impact" detail="Zenefits A/B Experiments" />
