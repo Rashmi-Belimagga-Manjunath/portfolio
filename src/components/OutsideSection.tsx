@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 const items = [
-  { title: "Photography", description: "Capturing moments, one frame at a time.", emoji: "📸" },
-  { title: "Travel", description: "Exploring new places and perspectives.", emoji: "✈️" },
-  { title: "Books", description: "Reading something I probably don't have enough time for.", emoji: "📚" },
+  { title: "Photography", description: "Capturing moments, one frame at a time.", image: "/images/photography.png" },
+  { title: "Travel", description: "Exploring new places and perspectives.", image: "/images/travel.png" },
+  { title: "Books", description: "Reading something I probably don't have enough time for.", image: "/images/books.png" },
 ];
 
 export default function OutsideSection() {
@@ -25,15 +26,24 @@ export default function OutsideSection() {
         {items.map((item, i) => (
           <FadeIn key={item.title} delay={i * 0.1}>
             <div
-              className="rounded-2xl p-6 sm:p-8 h-full text-center"
+              className="rounded-2xl overflow-hidden h-full"
               style={{
                 background: "rgba(255, 255, 255, 0.03)",
                 border: "1px solid rgba(255, 255, 255, 0.06)",
               }}
             >
-              <span className="text-4xl mb-4 block">{item.emoji}</span>
-              <h3 className="text-white font-bold text-base mb-2">{item.title}</h3>
-              <p className="text-[#D7E2EA]/50 text-sm">{item.description}</p>
+              <div className="relative w-full h-[220px]">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6 sm:p-8 text-center">
+                <h3 className="text-white font-bold text-base mb-2">{item.title}</h3>
+                <p className="text-[#D7E2EA]/50 text-sm">{item.description}</p>
+              </div>
             </div>
           </FadeIn>
         ))}
