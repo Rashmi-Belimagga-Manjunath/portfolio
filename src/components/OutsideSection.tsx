@@ -4,13 +4,13 @@ import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 const items = [
-  { text: "AI agents", image: "/images/photography.png" },
-  { text: "Product psychology", image: "/images/travel.png" },
-  { text: "Cafes in Dublin", image: "/images/books.png" },
+  { text: "AI agents", image: "/images/VIRELLE.png" },
+  { text: "Product psychology", image: "/images/SOVA.png" },
+  { text: "Cafes in Dublin", image: "/images/routeforge ai.png" },
   { text: "Photography", image: "/images/photography.png" },
   { text: "Running", image: "/images/travel.png" },
   { text: "Books I keep buying faster than I read", image: "/images/books.png" },
-  { text: "Why paper cuts hurt SO MUCH", image: "/images/photography.png" },
+  { text: "Why paper cuts hurt SO MUCH", image: "/images/Rashmi.png" },
 ];
 
 export default function OutsideSection() {
