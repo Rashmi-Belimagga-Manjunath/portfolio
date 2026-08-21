@@ -35,7 +35,7 @@ export default function HeroSection() {
         <FadeIn delay={0.15} y={40}>
           <h1
             className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center mt-8 sm:mt-6 md:mt-4"
-            style={{ fontSize: "clamp(2.5rem, 10vw, 140px)" }}
+            style={{ fontSize: "clamp(2rem, 6vw, 80px)" }}
           >
             Hi, i&apos;m Rashmi Manjunath
           </h1>
@@ -43,7 +43,7 @@ export default function HeroSection() {
       </div>
 
       {/* Hero Portrait */}
-      <FadeIn delay={0.6} y={30} className="absolute left-1/2 -translate-x-1/2 z-10 w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] bottom-8 sm:bottom-10">
+      <FadeIn delay={0.6} y={30} className="absolute left-1/2 -translate-x-1/2 z-10 w-[140px] sm:w-[180px] md:w-[220px] lg:w-[260px] bottom-10 sm:bottom-12">
         <Magnet padding={150} strength={3} activeTransition="transform 0.3s ease-out" inactiveTransition="transform 0.6s ease-in-out">
           <Image
             src="/images/profile-hero.png"
