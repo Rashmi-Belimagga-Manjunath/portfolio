@@ -3,22 +3,22 @@
     "number": "01",
     "name": "VIRELLE",
     "category": "AI Product",
-    "tagline": "AI-powered matchmaking platform built in 48 hours",
+    "tagline": "Agentic AI platform for luxury hospitality innovation",
     "liveUrl": "https://rashmi-belimagga-manjunath.github.io/VIRELLE/",
     "images": ["/images/screenshot-1.png", "/images/screenshot-2.png", "/images/screenshot-3.png"],
     "caseStudy": {
-      "problem": "Most matchmaking apps rely on surface-level preferences — swipe left on height, swipe right on hobbies. The result is high engagement but low compatibility. People spend hours chatting with people they'll never actually connect with.",
-      "insight": "What if matchmaking understood personality and values, not just preferences? Behavioural science shows that long-term compatibility is driven by emotional patterns, communication styles, and value alignment — none of which traditional apps capture.",
-      "users": "Singles aged 25-40 tired of swiping and wanting meaningful connections.",
-      "hypothesis": "Combining NLP-driven personality profiling with behavioural science models of compatibility can match people on dimensions that actually predict relationship success.",
-      "aiArchitecture": "NLP pipeline analyses personality from text inputs using Big Five and attachment theory models. Matching algorithm weights behavioural signals alongside stated preferences. MCP agent orchestration for real-time conversation analysis.",
-      "decisionsNotBuilt": "No swiping mechanic. No photo-first design. No gamification loops that prioritise engagement over outcomes.",
-      "evaluation": "Tested with 50+ user profiles in 48-hour hackathon. Measured match quality through structured feedback and conversation depth metrics.",
-      "tradeoffs": "Speed vs depth — 48 hours meant sacrificing production-grade NLP for a working prototype. Personality models are approximations, not clinical assessments.",
-      "outcome": "Fully functional prototype with real-time matching, adaptive question flows, and personality-driven compatibility scores.",
-      "next": "Clinical-grade personality assessment, longitudinal compatibility tracking, video date feedback loops."
+      "problem": "Luxury hotels face a constant challenge: unsold rooms, underused facilities, and shifting demand in the surrounding destination. Management needs to answer questions like: What opportunity exists right now? What should we create? Can we deliver it? How should we market it? Is it commercially worthwhile? No single role naturally owns this entire process.",
+      "insight": "The hotel innovation problem spans research, experience design, product development, marketing and management — each requiring different expertise. An agentic approach, where specialised AI agents handle distinct functions, can cover the full lifecycle from opportunity detection to commercial validation.",
+      "users": "Luxury hotel management teams — The Virelle Dublin, a fictional five-star boutique hotel with rooms, spa, restaurant, rooftop bar and premium guest services.",
+      "hypothesis": "Five specialised AI agents, each corresponding to one innovation archetype (research, experience design, product development, marketing, management), can collaborate to turn changing market conditions into commercially viable guest experiences.",
+      "aiArchitecture": "Five specialised AI agents orchestrated through MCP: Market Research Agent, Experience Design Agent, Product Development Agent, Marketing Agent, and Commercial Management Agent. Each agent owns a distinct phase of the innovation pipeline.",
+      "decisionsNotBuilt": "No single monolithic AI handling everything. No generic chatbot interface. No automation without human oversight at decision points.",
+      "evaluation": "Demonstrated end-to-end pipeline from opportunity detection through to commercial validation. Tested across multiple market scenarios for the Dublin hotel context.",
+      "tradeoffs": "Specialisation vs coordination — five agents need clear handoffs. Domain specificity — luxury hospitality requires nuanced understanding of premium guest expectations. Commercial realism — the system must produce viable business cases, not just creative ideas.",
+      "outcome": "Working multi-agent system demonstrating how AI can own the full innovation lifecycle for hospitality — from market sensing to experience design to commercial validation.",
+      "next": "Real-time market data integration, multi-property portfolio optimisation, guest feedback loops driving agent refinement."
     },
-    "tags": ["AI Agents", "MCP", "FastAPI", "React"]
+    "tags": ["AI Agents", "MCP", "Multi-Agent Systems", "Hospitality"]
   },
   {
     "number": "02",
