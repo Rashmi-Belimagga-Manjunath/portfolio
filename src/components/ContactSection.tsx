@@ -3,17 +3,17 @@
 import FadeIn from "./FadeIn";
 
 const contactItems = [
-  { label: "Email", value: "rashmimanjunath95@gmail.com", href: "mailto:rashmimanjunath95@gmail.com?subject=Hello%20Rashmi" },
-  { label: "LinkedIn", value: "/in/rashmi-manjunath", href: "https://linkedin.com/in/rashmi-manjunath" },
-  { label: "GitHub", value: "github.com/Rashmi-Belimagga-Manjunath", href: "https://github.com/Rashmi-Belimagga-Manjunath" },
-  { label: "Phone", value: "+353 894125300", href: "tel:+353894125300" },
-  { label: "Location", value: "Dublin, Ireland", href: null },
-  { label: "Availability", value: "Open to PM roles · Immediately available", href: null },
+  { label: "Email", value: "rashmimanjunath95@gmail.com", href: "mailto:rashmimanjunath95@gmail.com?subject=Hello%20Rashmi", icon: "✉️" },
+  { label: "LinkedIn", value: "/in/rashmi-manjunath", href: "https://linkedin.com/in/rashmi-manjunath", icon: "💼" },
+  { label: "GitHub", value: "github.com/Rashmi-Belimagga-Manjunath", href: "https://github.com/Rashmi-Belimagga-Manjunath", icon: "🐙" },
+  { label: "Phone", value: "+353 894125300", href: "tel:+353894125300", icon: "📱" },
+  { label: "Location", value: "Dublin, Ireland", href: null, icon: "📍" },
+  { label: "Availability", value: "Open to PM roles · Immediately available", href: null, icon: "🟢" },
 ];
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 sm:py-24 md:py-32 px-5 sm:px-8 md:px-10 max-w-[700px] mx-auto">
+    <section id="contact" className="py-20 sm:py-24 md:py-32 px-5 sm:px-8 md:px-10 max-w-[1100px] mx-auto">
       <FadeIn>
         <h2 className="text-white font-black mb-6" style={{ fontSize: "clamp(2.5rem, 10vw, 100px)" }}>
           Contact
@@ -27,26 +27,37 @@ export default function ContactSection() {
         </p>
       </FadeIn>
 
-      <div className="space-y-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {contactItems.map((item, i) => (
           <FadeIn key={item.label} delay={0.15 + i * 0.05}>
-            <div className="flex flex-col sm:flex-row sm:items-baseline py-4 border-b border-white/10">
-              <span className="text-white font-medium text-sm w-32 flex-shrink-0 mb-1 sm:mb-0">
-                {item.label}
-              </span>
-              {item.href ? (
-                <a
-                  href={item.href}
-                  target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="text-[#D7E2EA]/70 hover:text-white hover:underline transition-colors text-sm"
-                >
-                  {item.value}
-                </a>
-              ) : (
-                <span className="text-[#D7E2EA]/70 text-sm">{item.value}</span>
-              )}
-            </div>
+            {item.href ? (
+              <a
+                href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="block rounded-2xl p-6 transition-all hover:bg-white/5 group"
+                style={{
+                  background: "rgba(255, 255, 255, 0.03)",
+                  border: "1px solid rgba(255, 255, 255, 0.06)",
+                }}
+              >
+                <span className="text-2xl mb-3 block">{item.icon}</span>
+                <p className="text-white font-medium text-sm mb-1">{item.label}</p>
+                <p className="text-[#D7E2EA]/60 text-xs group-hover:text-[#D7E2EA]/80 transition-colors break-all">{item.value}</p>
+              </a>
+            ) : (
+              <div
+                className="rounded-2xl p-6"
+                style={{
+                  background: "rgba(255, 255, 255, 0.03)",
+                  border: "1px solid rgba(255, 255, 255, 0.06)",
+                }}
+              >
+                <span className="text-2xl mb-3 block">{item.icon}</span>
+                <p className="text-white font-medium text-sm mb-1">{item.label}</p>
+                <p className="text-[#D7E2EA]/60 text-xs">{item.value}</p>
+              </div>
+            )}
           </FadeIn>
         ))}
       </div>
