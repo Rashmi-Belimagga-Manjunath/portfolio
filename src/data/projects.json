@@ -45,22 +45,22 @@
     "number": "03",
     "name": "RouteForge AI",
     "category": "AI Platform",
-    "tagline": "AI-powered logistics optimisation for EU SMBs — full product strategy from market to prototype",
+    "tagline": "Agentic AI consultant for SME AI adoption — from overwhelm to actionable roadmap",
     "liveUrl": "https://github.com/Rashmi-Belimagga-Manjunath/routeforgeai",
     "images": ["/images/screenshot-7.png", "/images/screenshot-8.png", "/images/screenshot-9.png"],
     "caseStudy": {
-      "problem": "EU SMB logistics operators spend 3-4 hours daily manually planning routes. Enterprise solutions like SAP cost 100K+ and are overbuilt for small fleets. The result: wasted fuel, missed delivery windows, and suboptimal paths. The market is fragmented — no one owns the 'SMB route optimisation' space.",
-      "insight": "The routing problem for a 5-truck fleet is fundamentally different from a 500-truck fleet. SMBs need simplicity, not complexity. But they still need the intelligence — they just can't afford the enterprise price tag or 6-month implementation timeline.",
-      "users": "EU-based logistics operators with 2-20 vehicles. Fleet managers who are also the IT department. Owner-operators who wear five hats and need tools that work in 10 minutes, not 10 weeks.",
-      "hypothesis": "An AI route planner that learns from historical delivery patterns and real-time constraints can reduce fuel costs and delivery times for SMBs at a fraction of enterprise pricing — if the onboarding is dead simple.",
-      "aiArchitecture": "Optimisation engine combining constraint satisfaction with ML-learned route patterns. API-first architecture for integration with existing fleet management tools. React dashboard for visual route planning and fleet overview.",
-      "decisionsNotBuilt": "No full fleet management suite — focused purely on route optimisation to win on one thing. No driver mobile app in v1 — kept scope tight. No real-time GPS tracking — that's a different problem with different regulatory requirements.",
-      "evaluation": "Market sizing identified 2.3B EU SMB logistics market. Competitive analysis of 8 platforms (SAP, Route4Me, OptimoRoute). ICP interviews with fleet operators. Interactive prototype validated against real route scenarios.",
-      "tradeoffs": "Simplicity vs power — SMBs need easy but not toy-like. EU regulations add complexity (driver hours, emissions zones). Balancing algorithmic optimisation with human route knowledge — drivers know things the algorithm doesn't.",
-      "outcome": "Working prototype with route optimisation dashboard. Complete product strategy covering market sizing, ICP definition, competitive positioning, prioritised feature roadmap, and technical feasibility assessment.",
-      "next": "Multi-day route planning, fuel card API integration, predictive maintenance scheduling, driver mobile companion."
+      "problem": "Only 20% of SMEs use AI compared to 55% of large enterprises. Not because they don't want to — but because they face real barriers: lack of technical skills, limited structured data, high implementation costs, and increasing compliance pressure from the EU AI Act. AI isn't inaccessible, but adopting it correctly is.",
+      "insight": "There are 5.6 million SMEs in the EU food and beverage sector alone, with a growing AI consulting market but no affordable, structured AI planning tools. AI tools are getting cheaper, SMEs are sitting on unused data, and regulation is pushing them to act now. The gap isn't desire — it's guidance.",
+      "users": "EU food and beverage SMEs — café owners, restaurant operators, small manufacturers — who know AI could help but don't know where to start. Business owners wearing five hats who need actionable guidance, not technical jargon.",
+      "hypothesis": "An agentic AI consultant that creates tailor-made AI adoption roadmaps based on business size, data maturity, budget, and compliance requirements can turn AI from something overwhelming into something actionable.",
+      "aiArchitecture": "7-step intelligent process: (1) Business understanding — captures goals, constraints, priorities. (2) Data ingestion and validation. (3) ML readiness assessment. (4) Multi-agent analysis — multiple AI agents collaborate to generate insights. (5) User validation — business reviews and refines. (6) Dashboard and report. (7) Clear, step-by-step AI adoption roadmap.",
+      "decisionsNotBuilt": "No generic advice engine — every roadmap is tailored. No black-box recommendations — full transparency on scoring. No technical implementation — focused purely on strategy and planning.",
+      "evaluation": "Readiness scoring, success probability and risk levels, use case prioritisation (quick wins vs long-term), financial projections with ROI and timelines, GDPR and EU AI Act compliance alignment.",
+      "tradeoffs": "Simplicity vs depth — SMEs need easy but not superficial. Compliance complexity — EU AI Act adds real constraints. Balancing automation with human judgement — the system guides, the business decides.",
+      "outcome": "Working prototype demonstrating end-to-end AI adoption consulting. Complete product strategy covering market sizing (5.6M EU F&B SMEs), ICP definition, competitive positioning, and technical feasibility.",
+      "next": "Multi-industry expansion, integration with existing SME tools, real-time compliance monitoring, peer benchmarking across similar businesses."
     },
-    "tags": ["Market Sizing", "ICP", "Competitive Analysis", "AI/ML", "Product Strategy", "Prototyping"]
+    "tags": ["AI Agents", "Market Sizing", "EU AI Act", "SME Strategy", "Product Strategy", "Prototyping"]
   },
   {
     "number": "04",
