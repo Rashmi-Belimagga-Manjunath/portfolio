@@ -1,28 +1,27 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import FadeIn from "./FadeIn";
 import projects from "@/data/projects.json";
 
 const totalCards = projects.length;
 
-const caseStudyLabels: Record<string, string> = {
-  problem: "The problem",
-  insight: "What insight made you care",
-  users: "Who is experiencing it",
-  hypothesis: "Product hypothesis",
-  aiArchitecture: "Where does AI enter",
-  decisionsNotBuilt: "What I deliberately did NOT build",
-  evaluation: "How I evaluated it",
-  tradeoffs: "What I struggled with",
-  outcome: "What happened",
-  next: "What I'd build next",
-};
+const caseStudyFields = [
+  { key: "problem", label: "The problem" },
+  { key: "insight", label: "What insight made you care" },
+  { key: "users", label: "Who is experiencing it" },
+  { key: "hypothesis", label: "Product hypothesis" },
+  { key: "aiArchitecture", label: "Where does AI enter" },
+  { key: "decisionsNotBuilt", label: "What I deliberately did NOT build" },
+  { key: "evaluation", label: "How I evaluated it" },
+  { key: "tradeoffs", label: "What I struggled with" },
+  { key: "outcome", label: "What happened" },
+  { key: "next", label: "What I'd build next" },
+];
 
 function ProjectCard({ project, index }: { project: (typeof projects)[0]; index: number }) {
   const cardRef = useRef<HTMLDivElement>(null);
-  const [expanded, setExpanded] = useState(false);
   const { scrollYProgress } = useScroll({
     target: cardRef,
     offset: ["start start", "end end"],
@@ -43,7 +42,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
         className="sticky top-24 md:top-32 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 origin-top"
       >
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-5 gap-4">
           <div className="flex items-center gap-4">
             <span
               className="hero-heading font-black leading-none"
@@ -56,31 +55,23 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
               <h3 className="text-xl sm:text-2xl font-bold uppercase text-[#D7E2EA]">{project.name}</h3>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setExpanded(!expanded)}
-              className="rounded-full border-2 border-[#B600A8] text-[#B600A8] font-medium uppercase tracking-widest px-6 py-2.5 text-xs hover:bg-[#B600A8]/10 transition-colors"
-            >
-              {expanded ? "Close" : "Case Study"}
-            </button>
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-6 py-2.5 text-xs hover:bg-[#D7E2EA]/10 transition-colors"
-            >
-              {project.liveUrl.includes("github.com") ? "Code" : "Live"}
-            </a>
-          </div>
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-2.5 text-xs hover:bg-[#D7E2EA]/10 transition-colors self-start"
+          >
+            {project.liveUrl.includes("github.com") ? "View Code" : "View Live"}
+          </a>
         </div>
 
         {/* Tagline */}
-        <p className="text-[#D7E2EA]/60 text-sm sm:text-base leading-relaxed mb-4 max-w-2xl">
+        <p className="text-[#D7E2EA]/60 text-sm sm:text-base leading-relaxed mb-5 max-w-2xl">
           {project.tagline}
         </p>
 
         {/* Screenshots */}
-        <div className="grid grid-cols-5 gap-3 mb-4">
+        <div className="grid grid-cols-5 gap-3 mb-5">
           <div className="col-span-2 flex flex-col gap-3">
             <div className="rounded-[20px] sm:rounded-[30px] md:rounded-[40px] overflow-hidden" style={{ height: "clamp(100px, 12vw, 180px)" }}>
               <img src={project.images[0]} alt="" className="w-full h-full object-cover" />
@@ -95,7 +86,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
         </div>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap gap-1.5 mb-6">
           {project.tags.map((tag) => (
             <span
               key={tag}
@@ -107,31 +98,21 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           ))}
         </div>
 
-        {/* Expanded Case Study */}
-        <AnimatePresence>
-          {expanded && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="overflow-hidden"
-            >
-              <div className="mt-6 pt-6 border-t border-white/10 space-y-5">
-                {(Object.keys(caseStudyLabels) as Array<keyof typeof caseStudyLabels>).map((key) => (
-                  <div key={key}>
-                    <p className="text-[#B600A8] text-xs uppercase tracking-widest font-medium mb-1.5">
-                      {caseStudyLabels[key]}
-                    </p>
-                    <p className="text-[#D7E2EA]/70 text-sm leading-relaxed">
-                      {cs[key as keyof typeof cs]}
-                    </p>
-                  </div>
-                ))}
+        {/* Case Study */}
+        <div className="border-t border-white/10 pt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5">
+            {caseStudyFields.map(({ key, label }) => (
+              <div key={key}>
+                <p className="text-[#B600A8] text-xs uppercase tracking-widest font-medium mb-1.5">
+                  {label}
+                </p>
+                <p className="text-[#D7E2EA]/70 text-sm leading-relaxed">
+                  {cs[key as keyof typeof cs]}
+                </p>
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            ))}
+          </div>
+        </div>
       </motion.div>
     </div>
   );
