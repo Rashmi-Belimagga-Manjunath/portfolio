@@ -1,0 +1,43 @@
+{
+  "skills": [
+    { "emoji": "🎯", "name": "Product Strategy" },
+    { "emoji": "🗺️", "name": "Roadmapping" },
+    { "emoji": "📝", "name": "PRD Writing" },
+    { "emoji": "🔍", "name": "User Research" },
+    { "emoji": "🧩", "name": "JTBD" },
+    { "emoji": "⚖️", "name": "RICE / MoSCoW" },
+    { "emoji": "🚀", "name": "MVP Definition" },
+    { "emoji": "📣", "name": "GTM Strategy" },
+    { "emoji": "📐", "name": "Market Sizing" },
+    { "emoji": "🧪", "name": "A/B Testing" },
+    { "emoji": "🤝", "name": "Stakeholder Mgmt" },
+    { "emoji": "📊", "name": "Business Analysis" },
+    { "emoji": "🤖", "name": "AI Product Strategy" },
+    { "emoji": "📈", "name": "Product Analytics" },
+    { "emoji": "🗣️", "name": "Customer Discovery" },
+    { "emoji": "👥", "name": "Personas & ICP" },
+    { "emoji": "🧭", "name": "Competitive Analysis" },
+    { "emoji": "✏️", "name": "Wireframing" },
+    { "emoji": "🎚️", "name": "Metrics & KPIs" },
+    { "emoji": "🧬", "name": "Experimentation" },
+    { "emoji": "🗃️", "name": "SQL Basics" },
+    { "emoji": "🔁", "name": "Agile / Scrum" }
+  ],
+  "tools": [
+    "Figma",
+    "Notion",
+    "Jira",
+    "Confluence",
+    "Power BI",
+    "MySQL",
+    "ChatGPT",
+    "Claude",
+    "OpenAI",
+    "GitHub",
+    "Pendo",
+    "Azure",
+    "Excel",
+    "Miro",
+    "Slack"
+  ]
+}

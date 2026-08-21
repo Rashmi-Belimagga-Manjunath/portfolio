@@ -1,0 +1,21 @@
+[
+  {
+    "degree": "MSc Artificial Intelligence for Business",
+    "institution": "National College of Ireland",
+    "location": "Dublin, Ireland",
+    "dates": "2026 – 2027",
+    "focus": "AI Strategy, Machine Learning, Product Management",
+    "highlights": [
+      "Research on RAG architecture for product documentation",
+      "Academic workshop presentation at EUt+ conference"
+    ]
+  },
+  {
+    "degree": "Bachelor of Engineering – Information Technology",
+    "institution": "Visvesvaraya Technological University",
+    "location": "India",
+    "dates": "2014 – 2018",
+    "focus": "Information Technology, Software Engineering",
+    "highlights": []
+  }
+]

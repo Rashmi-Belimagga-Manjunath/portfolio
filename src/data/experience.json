@@ -1,0 +1,67 @@
+[
+  {
+    "company": "FlyRank",
+    "role": "AI/ML Intern",
+    "dates": "Jul 2026 – Present",
+    "location": "Remote",
+    "description": "Developing AI-powered solutions using Machine Learning and LLMs for real-world business applications.",
+    "highlights": [
+      "Building AI workflows using Python, prompt engineering, RAG, model evaluation",
+      "Integrating ML and LLM capabilities into scalable applications",
+      "Evaluating model performance and reliability"
+    ],
+    "metrics": [],
+    "tags": ["AI/ML", "LLMs", "RAG", "Python"]
+  },
+  {
+    "company": "Aurigo Software Technologies",
+    "role": "Product Manager",
+    "dates": "Jan 2023 – Dec 2025",
+    "location": "India",
+    "description": "Owned enterprise SaaS roadmaps aligned with strategic business objectives and enterprise customer priorities.",
+    "highlights": [
+      "Authored detailed PRDs in Confluence for alignment across engineering, design, and QA",
+      "Conducted competitive and market analysis for quarterly product strategy reviews",
+      "Developed Power BI dashboards analysing feature adoption and user behaviour"
+    ],
+    "metrics": [
+      { "value": "18%", "label": "feature adoption increase" },
+      { "value": "22%", "label": "backlog cycle time reduction" },
+      { "value": "15%", "label": "sprint velocity improvement" },
+      { "value": "30%", "label": "reporting efficiency gain" }
+    ],
+    "tags": ["Enterprise SaaS", "Roadmapping", "PRDs", "Power BI"]
+  },
+  {
+    "company": "Zenefits",
+    "role": "Associate Product Manager",
+    "dates": "Jul 2019 – Jan 2023",
+    "location": "India",
+    "description": "Supported senior PMs in roadmap planning, backlog refinement, and sprint coordination across engineering teams.",
+    "highlights": [
+      "Translated business requirements into detailed user stories and acceptance criteria",
+      "Partnered with customer success to analyse user feedback and recurring pain points",
+      "Designed and executed A/B experiments",
+      "Built KPI dashboards linking product usage to customer behaviour"
+    ],
+    "metrics": [
+      { "value": "15%", "label": "conversion uplift" },
+      { "value": "$3M", "label": "annual revenue impact" },
+      { "value": "4%", "label": "churn reduction" }
+    ],
+    "tags": ["B2B SaaS", "A/B Testing", "KPIs", "User Stories"]
+  },
+  {
+    "company": "Simplilearn",
+    "role": "Inside Sales Manager",
+    "dates": "Jul 2018 – Dec 2018",
+    "location": "India",
+    "description": "Managed outbound sales pipelines for professional certification programmes.",
+    "highlights": [
+      "Conducted needs analysis and positioned solutions aligned with customer goals",
+      "Collaborated with marketing to improve lead qualification and conversion efficiency"
+    ],
+    "metrics": [],
+    "tags": ["Sales", "Pipeline Management"]
+  }
+]
