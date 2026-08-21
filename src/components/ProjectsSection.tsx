@@ -124,7 +124,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
                       {caseStudyLabels[key]}
                     </p>
                     <p className="text-[#D7E2EA]/70 text-sm leading-relaxed">
-                      {cs[key]}
+                      {cs[key as keyof typeof cs]}
                     </p>
                   </div>
                 ))}
