@@ -112,6 +112,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
 }
 
 export default function ProjectsSection() {
+  const playClick = useClickSound();
   return (
     <section id="projects" className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 z-10 relative px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32">
       <FadeIn>
@@ -127,6 +128,20 @@ export default function ProjectsSection() {
         {projects.map((project, i) => (
           <ProjectCard key={project.number} project={project} index={i} />
         ))}
+
+        <FadeIn>
+          <div className="mt-16 text-center">
+            <a
+              href="https://github.com/Rashmi-Belimagga-Manjunath"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={playClick}
+              className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-3 text-sm hover:bg-[#D7E2EA]/10 transition-colors"
+            >
+              View All Projects on GitHub →
+            </a>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
