@@ -24,7 +24,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
     <div ref={cardRef} className="h-[85vh] relative" style={{ top: `${index * 28}px` }}>
       <motion.div
         style={{ scale }}
-        className="sticky top-24 md:top-32 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border border-gray-200 bg-white p-4 sm:p-6 md:p-8 origin-top shadow-lg"
+        className="sticky top-24 md:top-32 rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 origin-top"
       >
         <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
           <div className="flex items-center gap-4">
@@ -35,16 +35,15 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
               {project.number}
             </span>
             <div>
-              <p className="text-xs uppercase tracking-widest text-[#9CA3AF]">{project.category}</p>
-              <h3 className="text-xl sm:text-2xl font-bold uppercase text-[#1A1A1A]">{project.name}</h3>
+              <p className="text-xs uppercase tracking-widest text-[#D7E2EA]/60">{project.category}</p>
+              <h3 className="text-xl sm:text-2xl font-bold uppercase text-[#D7E2EA]">{project.name}</h3>
             </div>
           </div>
           <a
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full font-medium uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 text-sm sm:text-base text-white transition-all hover:opacity-90"
-            style={{ background: "var(--accent-gradient)" }}
+            className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 text-sm sm:text-base hover:bg-[#D7E2EA]/10 transition-colors self-start"
           >
             {project.liveUrl.includes("github.com") ? "View Code" : "View Live"}
           </a>
@@ -70,7 +69,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="bg-[#F3F0EC] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 z-10 relative px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32">
+    <section id="projects" className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 z-10 relative px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32">
       <FadeIn>
         <h2
           className="hero-heading font-black uppercase text-center mb-16 sm:mb-20 md:mb-28"

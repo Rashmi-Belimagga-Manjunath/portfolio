@@ -1,97 +1,47 @@
 "use client";
 
+import Image from "next/image";
 import FadeIn from "./FadeIn";
-
-const skills = [
-  "Product Strategy",
-  "AI / ML Products",
-  "Data & Analytics",
-  "Research & Publications",
-  "User-Centric Design",
-];
+import AnimatedText from "./AnimatedText";
+import ContactButton from "./ContactButton";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="min-h-screen flex flex-col justify-center px-5 sm:px-8 md:px-10 py-20 relative">
-      <div className="max-w-[1100px] mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left Column — Emotional Heading */}
-          <FadeIn delay={0} y={40}>
-            <h2
-              className="hero-heading font-black uppercase leading-[1.05] tracking-tight"
-              style={{ fontSize: "clamp(2.5rem, 7vw, 72px)" }}
-            >
-              I&apos;ve always been<br />
-              obsessed with<br />
-              &ldquo;but why?&rdquo;
-            </h2>
-          </FadeIn>
+    <section id="about" className="min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-20 relative overflow-hidden">
+      {/* Decorative images */}
+      <FadeIn delay={0.1} x={-80} y={0} duration={0.9} className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] z-0">
+        <Image src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png" alt="" width={210} height={210} className="w-[120px] sm:w-[160px] md:w-[210px] h-auto opacity-20" />
+      </FadeIn>
+      <FadeIn delay={0.25} x={-80} y={0} duration={0.9} className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] z-0">
+        <Image src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/p59_1.4659672e.png" alt="" width={180} height={180} className="w-[100px] sm:w-[140px] md:w-[180px] h-auto opacity-20" />
+      </FadeIn>
+      <FadeIn delay={0.15} x={80} y={0} duration={0.9} className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] z-0">
+        <Image src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/lego_icon-1.703bb594.png" alt="" width={210} height={210} className="w-[120px] sm:w-[160px] md:w-[210px] h-auto opacity-20" />
+      </FadeIn>
+      <FadeIn delay={0.3} x={80} y={0} duration={0.9} className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] z-0">
+        <Image src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png" alt="" width={220} height={220} className="w-[130px] sm:w-[170px] md:w-[220px] h-auto opacity-20" />
+      </FadeIn>
 
-          {/* Right Column — About Text */}
-          <FadeIn delay={0.15}>
-            <div className="card rounded-2xl px-6 py-8 sm:px-8 sm:py-10">
-              <div className="relative z-10 space-y-4 leading-relaxed" style={{ color: "#4B5563", fontSize: "clamp(0.8rem, 1.2vw, 0.95rem)" }}>
-                <p>
-                  Why do people use one feature and completely ignore another?<br />
-                  Why does a beautifully designed product still frustrate people?<br />
-                  Why are we building something just because we <em>can</em>?
-                </p>
-                <p>
-                  And now, in the age of AI — <strong className="text-[#1A1A1A]">what should we actually be building?</strong>
-                </p>
-                <p>That curiosity is what pulled me into product.</p>
-                <p>
-                  I started out close to customers, moved into product, spent years learning how complex B2B software actually gets built, and eventually found myself somewhere I didn&apos;t quite expect: at the intersection of <strong className="text-[#1A1A1A]">product, data and AI</strong>.
-                </p>
-                <p>I like that intersection. I like taking a messy problem, sitting with it longer than most people would, finding the signal buried underneath the noise, and turning it into something people can actually use.</p>
-                <p>
-                  I&apos;ve worked with LLMs, RAG, machine learning, product analytics and AI workflows; built products from scratch; explored what responsible AI adoption looks like for businesses; and taken my research into an academic workshop.
-                  But honestly, <strong className="text-[#1A1A1A]">the building is my favourite part.</strong>
-                </p>
-                <p>
-                  Give me a vague problem, a blank screen, a terminal, 27 tabs open and a slightly unreasonable amount of curiosity — and I&apos;m happy.
-                </p>
-                <p>
-                  I&apos;m currently pursuing an MSc in Artificial Intelligence for Business in Dublin, while figuring out what it means to build products in a world where the technology, possibilities and rules are changing almost daily.
-                </p>
-                <p>
-                  Outside of product and AI, I&apos;m usually running, strength training, reading something I probably don&apos;t have enough time for, discovering a new café, or going down an unexpected rabbit hole about something completely unrelated.
-                </p>
-                <p>
-                  And, for reasons I cannot scientifically explain, <strong className="text-[#1A1A1A]">paper cuts absolutely terrify me.</strong>
-                </p>
-                <p>Not AI taking over the world. Not public speaking. Not launching something to thousands of users. <strong className="text-[#1A1A1A]">Paper cuts.</strong></p>
-                <p>
-                  I don&apos;t want to just manage products. I want to understand them deeply enough to question them, build them, break them, improve them — and occasionally start again from scratch.
-                </p>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-
-        {/* I Work With */}
-        <FadeIn delay={0.3}>
-          <div className="mt-16 sm:mt-20">
-            <h3 className="text-[#1A1A1A] font-bold text-lg mb-6">I work with</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-              {skills.map((skill) => (
-                <div
-                  key={skill}
-                  className="px-4 py-2.5 rounded-lg text-center text-sm font-medium text-[#4B5563] card"
-                >
-                  {skill}
-                </div>
-              ))}
-            </div>
-          </div>
+      <div className="relative z-10 flex flex-col items-center gap-10 sm:gap-14 md:gap-16">
+        {/* Heading */}
+        <FadeIn delay={0} y={40}>
+          <h2
+            className="hero-heading font-black uppercase leading-none tracking-tight text-center"
+            style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
+          >
+            About me
+          </h2>
         </FadeIn>
 
-        {/* Signature */}
-        <FadeIn delay={0.4}>
-          <p className="mt-10 text-[#9CA3AF] text-sm italic">
-            — Rashmi Manjunath
-          </p>
-        </FadeIn>
+        {/* Animated Text */}
+        <AnimatedText
+          text="Why do people use one feature and completely ignore another? Why does a beautifully designed product still frustrate people? That curiosity is what pulled me into product. I started out close to customers, moved into product, and eventually found myself at the intersection of product, data and AI. I like taking a messy problem, sitting with it longer than most people would, finding the signal buried underneath the noise, and turning it into something people can actually use."
+          className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px]"
+          style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
+        />
+
+        {/* Contact Button */}
+        <ContactButton />
       </div>
     </section>
   );

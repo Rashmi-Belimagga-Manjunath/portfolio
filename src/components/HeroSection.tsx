@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import FadeIn from "./FadeIn";
+import Magnet from "./Magnet";
+import ContactButton from "./ContactButton";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -12,57 +14,62 @@ const navLinks = [
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-5 sm:px-8 md:px-10 py-12">
-      <FadeIn delay={0} y={30} className="w-full max-w-[600px]">
-        <div className="relative rounded-3xl p-8 sm:p-10 md:p-12 text-center card">
-          {/* Gradient accent line */}
-          <div
-            className="absolute -top-px left-1/4 right-1/4 h-px"
-            style={{ background: "var(--accent-gradient)" }}
-          />
-
-          {/* Portrait */}
-          <FadeIn delay={0.1} className="mb-8">
-            <div className="w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image
-                src="/images/profile-hero.png"
-                alt="Rashmi Manjunath"
-                width={128}
-                height={128}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
-          </FadeIn>
-
-          {/* Text */}
-          <FadeIn delay={0.2}>
-            <p className="text-[#6B7280] text-sm mb-2">Hey.</p>
-            <h1 className="hero-heading font-black text-3xl sm:text-4xl md:text-5xl mb-3">
-              I&apos;m Rashmi.
-            </h1>
-            <p className="text-[#6B7280] text-sm sm:text-base max-w-xs mx-auto leading-relaxed">
-              Product Manager & AI Product Builder based in Dublin
-            </p>
-          </FadeIn>
-
-          {/* Nav Links */}
-          <FadeIn delay={0.3}>
-            <div className="flex flex-wrap justify-center gap-2 mt-8">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="px-4 py-2 rounded-full text-xs sm:text-sm font-medium text-[#6B7280] hover:text-[#1A1A1A] hover:bg-gray-100 transition-all"
-                  style={{ border: "1px solid var(--border)" }}
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          </FadeIn>
-        </div>
+    <section className="h-screen flex flex-col overflow-x-clip relative">
+      {/* Navbar */}
+      <FadeIn delay={0} y={-20}>
+        <nav className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
       </FadeIn>
+
+      {/* Hero Heading */}
+      <div className="overflow-hidden">
+        <FadeIn delay={0.15} y={40}>
+          <h1
+            className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center mt-6 sm:mt-4 md:-mt-5"
+            style={{ fontSize: "clamp(3rem, 17.5vw, 280px)" }}
+          >
+            Hi, i&apos;m Rashmi
+          </h1>
+        </FadeIn>
+      </div>
+
+      {/* Hero Portrait */}
+      <FadeIn delay={0.6} y={30} className="absolute left-1/2 -translate-x-1/2 z-10 w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px] top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0">
+        <Magnet padding={150} strength={3} activeTransition="transform 0.3s ease-out" inactiveTransition="transform 0.6s ease-in-out">
+          <Image
+            src="/images/profile-hero.png"
+            alt="Rashmi Manjunath"
+            width={520}
+            height={520}
+            className="w-full h-auto object-cover rounded-2xl"
+            priority
+          />
+        </Magnet>
+      </FadeIn>
+
+      {/* Bottom Bar */}
+      <div className="flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 mt-auto relative z-20">
+        <FadeIn delay={0.35} y={20}>
+          <p
+            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]"
+            style={{ fontSize: "clamp(0.75rem, 1.4vw, 1.5rem)" }}
+          >
+            a product manager driven by building striking and unforgettable products
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.5} y={20}>
+          <ContactButton />
+        </FadeIn>
+      </div>
     </section>
   );
 }
