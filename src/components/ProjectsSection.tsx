@@ -9,7 +9,7 @@ const totalCards = projects.length;
 
 const caseStudyFields = [
   { key: "problem", label: "The problem" },
-  { key: "insight", label: "What insight made you care" },
+  { key: "insight", label: "What insight made me care" },
   { key: "users", label: "Who is experiencing it" },
   { key: "hypothesis", label: "Product hypothesis" },
   { key: "aiArchitecture", label: "Where does AI enter" },
