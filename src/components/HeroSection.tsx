@@ -64,10 +64,12 @@ export default function HeroSection() {
       <div className="flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 mt-auto relative z-20">
         <FadeIn delay={0.35} y={20}>
           <p
-            className="text-[var(--nav-text)] font-light uppercase tracking-wide leading-snug max-w-[140px] sm:max-w-[180px] md:max-w-[220px]"
-            style={{ fontSize: "clamp(0.65rem, 1.2vw, 1.2rem)" }}
+            className="text-[var(--nav-text)] font-light tracking-wide leading-snug max-w-[280px] sm:max-w-[360px] md:max-w-[440px]"
+            style={{ fontSize: "clamp(0.65rem, 1.2vw, 1rem)" }}
           >
-            a product manager driven by building striking and unforgettable products
+            I like messy problems. So I build things.
+            <br />
+            <span className="text-[var(--text-muted)] opacity-60">Product Manager with 7+ years across B2B SaaS, product analytics and AI — currently building at the intersection of product thinking and emerging technology.</span>
           </p>
         </FadeIn>
         <FadeIn delay={0.5} y={20}>
