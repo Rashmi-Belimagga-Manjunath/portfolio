@@ -121,3 +121,26 @@ body {
 [data-theme="light"] img {
   filter: brightness(0.95);
 }
+
+/* Skills & Tools pills in light mode */
+[data-theme="light"] [style*="rgba(255, 255, 255, 0.04)"] {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] [style*="rgba(255, 255, 255, 0.08)"] {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Light mode text utilities */
+[data-theme="light"] .text-\[\#D7E2EA\]\/80 {
+  color: rgba(26, 26, 26, 0.8) !important;
+}
+
+[data-theme="light"] .text-\[\#D7E2EA\]\/30 {
+  color: rgba(26, 26, 26, 0.3) !important;
+}
+
+/* Contact section specific */
+[data-theme="light"] [style*="background: linear-gradient"] {
+  filter: none;
+}
