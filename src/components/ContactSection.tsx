@@ -6,7 +6,6 @@ const contactItems = [
   { label: "Email", value: "rashmimanjunath95@gmail.com", href: "mailto:rashmimanjunath95@gmail.com?subject=Hello%20Rashmi", icon: "✉️" },
   { label: "LinkedIn", value: "/in/rashmi-manjunath", href: "https://linkedin.com/in/rashmi-manjunath", icon: "💼" },
   { label: "GitHub", value: "github.com/Rashmi-Belimagga-Manjunath", href: "https://github.com/Rashmi-Belimagga-Manjunath", icon: "🐙" },
-  { label: "Phone", value: "+353 894125300", href: "tel:+353894125300", icon: "📱" },
   { label: "Location", value: "Dublin, Ireland", href: null, icon: "📍" },
   { label: "Availability", value: "Open to PM roles · Immediately available", href: null, icon: "🟢" },
 ];
