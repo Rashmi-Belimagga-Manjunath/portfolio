@@ -4,6 +4,7 @@ import Image from "next/image";
 import FadeIn from "./FadeIn";
 import Magnet from "./Magnet";
 import ContactButton from "./ContactButton";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -18,15 +19,18 @@ export default function HeroSection() {
       {/* Navbar */}
       <FadeIn delay={0} y={-20}>
         <nav className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base hover:opacity-70 transition-opacity duration-200"
-            >
-              {link.label}
-            </a>
-          ))}
+          <div className="flex items-center gap-6">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-[var(--nav-text)] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base hover:opacity-70 transition-opacity duration-200"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+          <ThemeToggle />
         </nav>
       </FadeIn>
 
@@ -60,7 +64,7 @@ export default function HeroSection() {
       <div className="flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 mt-auto relative z-20">
         <FadeIn delay={0.35} y={20}>
           <p
-            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[140px] sm:max-w-[180px] md:max-w-[220px]"
+            className="text-[var(--nav-text)] font-light uppercase tracking-wide leading-snug max-w-[140px] sm:max-w-[180px] md:max-w-[220px]"
             style={{ fontSize: "clamp(0.65rem, 1.2vw, 1.2rem)" }}
           >
             a product manager driven by building striking and unforgettable products
