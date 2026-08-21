@@ -5,7 +5,7 @@
     "category": "AI Product",
     "tagline": "Agentic AI platform for luxury hospitality innovation",
     "liveUrl": "https://rashmi-belimagga-manjunath.github.io/VIRELLE/",
-    "images": ["/images/screenshot-1.png", "/images/screenshot-2.png", "/images/screenshot-3.png"],
+    "images": ["/images/VIRELLE.png", "/images/screenshot-1.png", "/images/screenshot-2.png"],
     "caseStudy": {
       "problem": "Luxury hotels face a constant challenge: unsold rooms, underused facilities, and shifting demand in the surrounding destination. Management needs to answer questions like: What opportunity exists right now? What should we create? Can we deliver it? How should we market it? Is it commercially worthwhile? No single role naturally owns this entire process.",
       "insight": "The hotel innovation problem spans research, experience design, product development, marketing and management — each requiring different expertise. An agentic approach, where specialised AI agents handle distinct functions, can cover the full lifecycle from opportunity detection to commercial validation.",
@@ -26,7 +26,7 @@
     "category": "AI Strategy",
     "tagline": "Calm self-reflection product for building self-trust through daily rituals",
     "liveUrl": "https://github.com/Rashmi-Belimagga-Manjunath/sova-a-calm-journey",
-    "images": ["/images/screenshot-4.png", "/images/screenshot-5.png", "/images/screenshot-6.png"],
+    "images": ["/images/SOVA.png", "/images/screenshot-4.png", "/images/screenshot-5.png"],
     "caseStudy": {
       "problem": "Most wellness and journaling apps rely on streaks, metrics, and guilt-driven engagement. They turn self-reflection into another productivity task. The result: people abandon them, or worse, start performing for the app instead of reflecting honestly.",
       "insight": "Self-trust isn't built through gamification. It's built through small, pressure-free daily rituals that feel safe, optional, and supportive. The product should disappear when you need it to — not demand attention.",
@@ -47,7 +47,7 @@
     "category": "AI Platform",
     "tagline": "Agentic AI consultant for SME AI adoption — from overwhelm to actionable roadmap",
     "liveUrl": "https://github.com/Rashmi-Belimagga-Manjunath/routeforgeai",
-    "images": ["/images/screenshot-7.png", "/images/screenshot-8.png", "/images/screenshot-9.png"],
+    "images": ["/images/routeforge ai.png", "/images/screenshot-7.png", "/images/screenshot-8.png"],
     "caseStudy": {
       "problem": "Only 20% of SMEs use AI compared to 55% of large enterprises. Not because they don't want to — but because they face real barriers: lack of technical skills, limited structured data, high implementation costs, and increasing compliance pressure from the EU AI Act. AI isn't inaccessible, but adopting it correctly is.",
       "insight": "There are 5.6 million SMEs in the EU food and beverage sector alone, with a growing AI consulting market but no affordable, structured AI planning tools. AI tools are getting cheaper, SMEs are sitting on unused data, and regulation is pushing them to act now. The gap isn't desire — it's guidance.",
