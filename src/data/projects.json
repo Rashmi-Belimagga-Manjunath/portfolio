@@ -68,7 +68,7 @@
     "category": "Research",
     "tagline": "Human-AI collaboration in personal safety narratives",
     "liveUrl": "https://digitalstory.lovable.app/",
-    "images": ["/images/screenshot-10.png", "/images/screenshot-11.png", "/images/screenshot-12.png"],
+    "images": ["/images/digital story.png"],
     "caseStudy": {
       "problem": "Personal safety narratives — survivor stories, incident reports, witness accounts — are deeply personal but often poorly captured by existing tools. The gap between lived experience and documented account creates barriers to justice and support.",
       "insight": "AI can help people structure and articulate difficult experiences, but only if designed with extreme sensitivity to context, agency, and emotional safety. The technology must serve the person, not the other way around.",
