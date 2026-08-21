@@ -1,13 +1,20 @@
 "use client";
 
 import { useTheme } from "./ThemeProvider";
+import { useClickSound } from "./useClickSound";
 
 export default function ThemeToggle() {
   const { theme, toggle } = useTheme();
+  const playClick = useClickSound();
+
+  const handleClick = () => {
+    playClick();
+    toggle();
+  };
 
   return (
     <button
-      onClick={toggle}
+      onClick={handleClick}
       className="theme-toggle relative w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors"
       aria-label="Toggle theme"
     >

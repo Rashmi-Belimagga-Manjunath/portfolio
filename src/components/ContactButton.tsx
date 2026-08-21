@@ -1,9 +1,14 @@
 "use client";
 
+import { useClickSound } from "./useClickSound";
+
 export default function ContactButton({ className = "" }: { className?: string }) {
+  const playClick = useClickSound();
+
   return (
     <a
       href="#contact"
+      onClick={playClick}
       className={`inline-block rounded-full px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-white font-medium uppercase tracking-widest text-xs sm:text-sm md:text-base ${className}`}
       style={{
         background: "linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)",

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import FadeIn from "./FadeIn";
 import projects from "@/data/projects.json";
+import { useClickSound } from "./useClickSound";
 
 const totalCards = projects.length;
 
@@ -22,6 +23,7 @@ const caseStudyFields = [
 
 function ProjectCard({ project, index }: { project: (typeof projects)[0]; index: number }) {
   const cardRef = useRef<HTMLDivElement>(null);
+  const playClick = useClickSound();
   const { scrollYProgress } = useScroll({
     target: cardRef,
     offset: ["start start", "end end"],
@@ -59,6 +61,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={playClick}
             className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-2.5 text-xs hover:bg-[#D7E2EA]/10 transition-colors self-start"
           >
             {project.liveUrl.includes("github.com") ? "View Code" : "View Live"}
