@@ -32,7 +32,7 @@ export default function HeroSection() {
 
       {/* Hero Heading */}
       <FadeIn delay={0.15} y={40} className="mt-6 sm:mt-4 md:-mt-5 px-6 md:px-10 overflow-hidden">
-        <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[10vw] sm:text-[11vw] md:text-[12vw] lg:text-[13vw]">
+        <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[7vw] sm:text-[7.5vw] md:text-[8vw] lg:text-[8.5vw]">
           Hi, i&apos;m Rashmi Manjunath
         </h1>
       </FadeIn>
@@ -55,12 +55,12 @@ export default function HeroSection() {
       {/* Hero Portrait */}
       <FadeIn delay={0.6} y={30} className="absolute left-1/2 -translate-x-1/2 z-10 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0">
         <Magnet padding={150} strength={3}>
-          <div className="w-[200px] sm:w-[260px] md:w-[320px] lg:w-[380px]">
+          <div className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px]">
             <Image
               src="/images/profile-hero.png"
               alt="Rashmi Manjunath"
-              width={380}
-              height={380}
+              width={300}
+              height={300}
               className="w-full h-auto rounded-2xl"
               priority
             />
