@@ -39,16 +39,17 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 sm:py-24 md:py-32 px-5 sm:px-8 md:px-10 max-w-[700px] mx-auto">
       <FadeIn>
+        <p className="text-[#E8573A] text-xs uppercase tracking-[0.2em] font-medium mb-3">Contact</p>
         <h2
           className="hero-heading font-black uppercase mb-6"
           style={{ fontSize: "clamp(2.5rem, 10vw, 100px)" }}
         >
-          Contact
+          Let&apos;s talk
         </h2>
       </FadeIn>
 
       <FadeIn delay={0.1}>
-        <p className="text-[#D7E2EA] text-sm sm:text-base leading-relaxed mb-12 max-w-lg" style={{ fontSize: "clamp(0.85rem, 1.3vw, 1.05rem)" }}>
+        <p className="text-[#4B5563] text-sm sm:text-base leading-relaxed mb-12 max-w-lg" style={{ fontSize: "clamp(0.85rem, 1.3vw, 1.05rem)" }}>
           Hiring for a PM role, or want to build from zero?<br />
           Actively looking for product roles where 0→1 instinct and founder mindset are the point — not a footnote.
         </p>
@@ -57,8 +58,8 @@ export default function ContactSection() {
       <div className="space-y-0">
         {contactItems.map((item, i) => (
           <FadeIn key={item.label} delay={0.15 + i * 0.05}>
-            <div className="flex flex-col sm:flex-row sm:items-baseline py-4 border-b border-white/10">
-              <span className="text-white font-medium text-sm w-32 flex-shrink-0 mb-1 sm:mb-0">
+            <div className="flex flex-col sm:flex-row sm:items-baseline py-4 border-b border-gray-200">
+              <span className="text-[#1A1A1A] font-medium text-sm w-32 flex-shrink-0 mb-1 sm:mb-0">
                 {item.label}
               </span>
               {item.href ? (
@@ -66,12 +67,12 @@ export default function ContactSection() {
                   href={item.href}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="text-[#D7E2EA]/70 hover:text-white hover:underline transition-colors text-sm"
+                  className="text-[#6B7280] hover:text-[#E8573A] transition-colors text-sm"
                 >
                   {item.value}
                 </a>
               ) : (
-                <span className="text-[#D7E2EA]/70 text-sm">{item.value}</span>
+                <span className="text-[#6B7280] text-sm">{item.value}</span>
               )}
             </div>
           </FadeIn>
@@ -79,7 +80,7 @@ export default function ContactSection() {
       </div>
 
       <FadeIn delay={0.5}>
-        <p className="text-[#D7E2EA]/20 text-xs mt-12">
+        <p className="text-[#9CA3AF] text-xs mt-12">
           © 2026 · Rashmi Manjunath
         </p>
       </FadeIn>

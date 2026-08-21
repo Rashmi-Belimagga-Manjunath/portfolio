@@ -45,13 +45,13 @@ export default function CustomCursor() {
   return (
     <>
       <div
-        className="pointer-events-none fixed top-0 left-0 z-[9999] rounded-full mix-blend-difference"
+        className="pointer-events-none fixed top-0 left-0 z-[9999] rounded-full"
         style={{
           width: hovering ? 48 : 16,
           height: hovering ? 48 : 16,
-          background: "white",
+          background: hovering ? "rgba(232, 87, 58, 0.15)" : "#1A1A1A",
           transform: `translate(${pos.x - (hovering ? 24 : 8)}px, ${pos.y - (hovering ? 24 : 8)}px)`,
-          transition: "width 0.3s, height 0.3s, transform 0.15s ease-out",
+          transition: "width 0.3s, height 0.3s, transform 0.15s ease-out, background 0.3s",
           opacity: visible ? 1 : 0,
         }}
       />
@@ -61,7 +61,7 @@ export default function CustomCursor() {
           width: 6,
           height: 6,
           borderRadius: "50%",
-          background: "white",
+          background: "#E8573A",
           transform: `translate(${pos.x - 3}px, ${pos.y - 3}px)`,
           opacity: visible ? 0.8 : 0,
           transition: "opacity 0.3s",

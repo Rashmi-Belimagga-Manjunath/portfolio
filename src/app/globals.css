@@ -2,8 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --bg: #FAF8F5;
+  --bg-card: #FFFFFF;
+  --text: #1A1A1A;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --accent-coral: #E8573A;
+  --accent-purple: #7C3AED;
+  --accent-gradient: linear-gradient(135deg, #E8573A, #7C3AED);
+  --border: rgba(0, 0, 0, 0.06);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
 html, body, #root {
-  background: #0C0C0C;
+  background: var(--bg);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +25,7 @@ html, body, #root {
 
 body {
   font-family: 'Kanit', sans-serif;
-  color: #D7E2EA;
+  color: var(--text);
   overflow-x: clip;
 }
 
@@ -20,8 +34,31 @@ body {
 }
 
 .hero-heading {
-  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.hero-heading-dark {
+  background: linear-gradient(180deg, #1A1A1A 0%, #4B5563 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.metric-badge {
+  background: rgba(232, 87, 58, 0.08);
+  border: 1px solid rgba(232, 87, 58, 0.15);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
 }
