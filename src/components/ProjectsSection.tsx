@@ -130,7 +130,7 @@ export default function ProjectsSection() {
         ))}
 
         <FadeIn>
-          <div className="mt-16 text-center">
+          <div className="mt-28 text-center">
             <a
               href="https://github.com/Rashmi-Belimagga-Manjunath"
               target="_blank"
