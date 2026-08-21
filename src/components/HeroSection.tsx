@@ -22,7 +22,7 @@ export default function HeroSection() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200"
+              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base hover:opacity-70 transition-opacity duration-200"
             >
               {link.label}
             </a>
@@ -34,22 +34,22 @@ export default function HeroSection() {
       <div className="overflow-hidden">
         <FadeIn delay={0.15} y={40}>
           <h1
-            className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center mt-6 sm:mt-4 md:-mt-5"
-            style={{ fontSize: "clamp(3rem, 17.5vw, 280px)" }}
+            className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center mt-8 sm:mt-6 md:mt-4"
+            style={{ fontSize: "clamp(2.5rem, 10vw, 140px)" }}
           >
-            Hi, i&apos;m Rashmi
+            Hi, i&apos;m Rashmi Manjunath
           </h1>
         </FadeIn>
       </div>
 
       {/* Hero Portrait */}
-      <FadeIn delay={0.6} y={30} className="absolute left-1/2 -translate-x-1/2 z-10 w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px] top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0">
+      <FadeIn delay={0.6} y={30} className="absolute left-1/2 -translate-x-1/2 z-10 w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] bottom-8 sm:bottom-10">
         <Magnet padding={150} strength={3} activeTransition="transform 0.3s ease-out" inactiveTransition="transform 0.6s ease-in-out">
           <Image
             src="/images/profile-hero.png"
             alt="Rashmi Manjunath"
-            width={520}
-            height={520}
+            width={300}
+            height={300}
             className="w-full h-auto object-cover rounded-2xl"
             priority
           />
@@ -60,8 +60,8 @@ export default function HeroSection() {
       <div className="flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 mt-auto relative z-20">
         <FadeIn delay={0.35} y={20}>
           <p
-            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]"
-            style={{ fontSize: "clamp(0.75rem, 1.4vw, 1.5rem)" }}
+            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[140px] sm:max-w-[180px] md:max-w-[220px]"
+            style={{ fontSize: "clamp(0.65rem, 1.2vw, 1.2rem)" }}
           >
             a product manager driven by building striking and unforgettable products
           </p>
