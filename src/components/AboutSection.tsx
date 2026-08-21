@@ -29,95 +29,41 @@ export default function AboutSection() {
             </p>
 
             <p className="leading-relaxed">
-              And now, in the age of AI —{" "}
-              <span className="text-white font-bold">what should we actually be building?</span>
-            </p>
-
-            <p className="leading-relaxed text-[#D7E2EA]/70">
               That curiosity is what pulled me into product.
             </p>
 
             <p className="leading-relaxed text-[#D7E2EA]/70">
-              I started out close to customers, moved into product, spent years learning how complex B2B software actually gets built, and eventually found myself somewhere I didn&apos;t quite expect: at the intersection of{" "}
-              <span className="text-white font-bold">product, data and AI</span>.
+              I like taking a messy problem, sitting with it longer than most people would, finding the signal buried underneath the noise, and turning it into something people can actually use. Over the years, that has meant working across B2B SaaS, product analytics, strategy, and now increasingly AI.
+            </p>
+
+            <p className="leading-relaxed text-[#D7E2EA]/70">
+              Lately, I&apos;ve been especially interested in the space where{" "}
+              <span className="text-white font-bold">product thinking meets AI</span>{" "}
+              — not just using AI because it&apos;s exciting, but figuring out where it genuinely makes a product better. That&apos;s led me to building my own AI products, experimenting with new tools, researching AI-assisted product decision-making, and pursuing an MSc in Artificial Intelligence for Business.
+            </p>
+
+            <p className="leading-relaxed text-[#D7E2EA]/70">
+              I&apos;m also learning that being ambitious doesn&apos;t mean saying yes to everything. Sometimes I take on too many things because there&apos;s this little voice in my head saying{" "}
+              <em className="text-[#D7E2EA]/50">&ldquo;what if you&apos;re wasting your potential?&rdquo;</em>{" "}
+              I&apos;m learning to replace that with a better question:
             </p>
 
             <p className="leading-relaxed">
-              I like that intersection.
+              <span className="text-white font-bold">&ldquo;What is actually worth my energy?&rdquo;</span>
             </p>
 
             <p className="leading-relaxed text-[#D7E2EA]/70">
-              I like taking a messy problem, sitting with it longer than most people would, finding the signal buried underneath the noise, and turning it into something people can actually use.
-            </p>
-
-            <p className="leading-relaxed text-[#D7E2EA]/70">
-              These days, I&apos;m particularly fascinated by AI products — not the{" "}
-              <em className="text-[#D7E2EA]/50">&ldquo;let&apos;s put a chatbot on it&rdquo;</em>{" "}
-              kind, but the harder questions underneath:
-            </p>
-
-            <p className="leading-relaxed text-white font-medium pl-4 border-l-2 border-[#B600A8]/40">
-              Where does AI genuinely create leverage?<br />
-              Where should humans stay firmly in the loop?<br />
-              How do we make AI useful without making it unpredictable?<br />
-              And how do we build products people can trust, not just products that can generate impressive demos?
-            </p>
-
-            <p className="leading-relaxed text-[#D7E2EA]/70">
-              So I&apos;ve started answering those questions by building.
-            </p>
-
-            <p className="leading-relaxed text-[#D7E2EA]/70">
-              I&apos;ve worked with LLMs, RAG, machine learning, product analytics and AI workflows; built products from scratch; explored what responsible AI adoption looks like for businesses; and taken my research into an academic workshop.
-              But honestly,{" "}
-              <span className="text-white font-bold">the building is my favourite part.</span>
-            </p>
-
-            <p className="leading-relaxed text-[#D7E2EA]/70">
-              Give me a vague problem, a blank screen, a terminal, 27 tabs open and a slightly unreasonable amount of curiosity — and I&apos;m happy.
-            </p>
-
-            <div className="py-6 border-t border-b border-white/5 my-8">
-              <p className="leading-relaxed text-[#D7E2EA]/60 text-[0.9em]">
-                I&apos;m also the kind of person who occasionally looks at a perfectly reasonable amount of ambition and thinks,{" "}
-                <span className="text-[#D7E2EA]/80 font-medium">&ldquo;What if I did all of it?&rdquo;</span>
-              </p>
-
-              <p className="leading-relaxed text-[#D7E2EA]/60 text-[0.9em] mt-4">
-                So I do.
-              </p>
-
-              <p className="leading-relaxed text-[#D7E2EA]/50 text-[0.9em] mt-4">
-                Sometimes I take on too many things because somewhere in the back of my mind is the fear that{" "}
-                <em>if I don&apos;t try this, I&apos;ll waste some version of my potential.</em>
-              </p>
-
-              <p className="leading-relaxed text-[#D7E2EA]/50 text-[0.9em] mt-4">
-                And sometimes that means I burn myself out.
-              </p>
-
-              <p className="leading-relaxed text-[#D7E2EA]/70 text-[0.9em] mt-4">
-                I&apos;m learning that potential isn&apos;t something you have to prove by doing everything. Sometimes the more ambitious thing is choosing{" "}
-                <span className="text-white font-medium">what deserves your energy</span>{" "}
-                — and letting the rest wait.
-              </p>
-            </div>
-
-            <p className="leading-relaxed text-[#D7E2EA]/70">
-              I&apos;m currently pursuing an MSc in Artificial Intelligence for Business in Dublin, while figuring out what it means to build products in a world where the technology, possibilities and rules are changing almost daily.
-            </p>
-
-            <p className="leading-relaxed text-[#D7E2EA]/70">
-              Outside of product and AI, I&apos;m usually running, strength training, reading something I probably don&apos;t have enough time for, discovering a new café, or going down an unexpected rabbit hole about something completely unrelated.
+              Outside of product, you&apos;ll usually find me taking photographs, exploring somewhere new, getting overly excited about a good cafe, or falling down an internet rabbit hole about something I absolutely did not need to know.
             </p>
 
             <div className="py-8 text-center">
-              <p className="leading-relaxed text-[#D7E2EA]/70">
-                And, for reasons I cannot scientifically explain,{" "}
-                <span className="text-white font-black text-lg">paper cuts absolutely terrify me.</span>
+              <p className="leading-relaxed text-[#D7E2EA]/70 mb-4">
+                And one completely unnecessary fact about me:
               </p>
-              <p className="leading-relaxed text-[#D7E2EA]/50 mt-3 text-[0.9em]">
-                Yes.<br />
+              <p className="text-white font-black text-lg sm:text-xl">
+                I&apos;m terrified of paper cuts.
+              </p>
+              <p className="leading-relaxed text-[#D7E2EA]/50 mt-4 text-[0.9em]">
                 Not AI taking over the world.<br />
                 Not public speaking.<br />
                 Not launching something to thousands of users.
@@ -125,31 +71,13 @@ export default function AboutSection() {
               <p className="mt-3">
                 <span className="text-white font-black text-xl">Paper cuts.</span>
               </p>
-              <p className="text-[#D7E2EA]/40 text-[0.85em] mt-2 italic">
-                I think that says something about me.
-              </p>
             </div>
 
             <p className="leading-relaxed text-[#D7E2EA]/70">
-              I&apos;m serious about the things that matter, but I don&apos;t think a person should ever become so polished that you can&apos;t see the slightly weird, curious, imperfect human underneath.
+              I don&apos;t have everything figured out — and honestly, I don&apos;t think I want to. I&apos;m more interested in staying curious, building things that matter, and becoming a little better at asking{" "}
+              <span className="text-white font-bold">&ldquo;but why?&rdquo;</span>{" "}
+              before asking <span className="text-white font-bold">&ldquo;what should we build?&rdquo;</span>
             </p>
-
-            <p className="leading-relaxed text-[#D7E2EA]/70">
-              So no, I don&apos;t want to just manage products.
-            </p>
-
-            <p className="leading-relaxed">
-              I want to understand them deeply enough to question them, build them, break them, improve them — and occasionally start again from scratch.
-            </p>
-
-            <div className="py-6 text-center mt-8">
-              <p className="text-white font-bold text-lg sm:text-xl leading-loose">
-                Interesting problems.<br />
-                Ambitious people.<br />
-                Useful technology.<br />
-                <span className="hero-heading font-black text-xl sm:text-2xl">And products worth building.</span>
-              </p>
-            </div>
           </div>
         </FadeIn>
       </div>
