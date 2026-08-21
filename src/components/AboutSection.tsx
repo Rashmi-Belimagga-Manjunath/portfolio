@@ -6,7 +6,6 @@ export default function AboutSection() {
   return (
     <section id="about" className="min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-20 relative overflow-hidden">
       <div className="relative z-10 max-w-[700px] mx-auto">
-        {/* Heading */}
         <FadeIn delay={0} y={40}>
           <h2
             className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-16 sm:mb-20"
@@ -16,7 +15,6 @@ export default function AboutSection() {
           </h2>
         </FadeIn>
 
-        {/* About Text — emotional typography */}
         <FadeIn delay={0.15}>
           <div className="space-y-6 text-[#D7E2EA]" style={{ fontSize: "clamp(0.85rem, 1.3vw, 1.05rem)" }}>
             <p className="leading-relaxed">
@@ -79,7 +77,6 @@ export default function AboutSection() {
               Give me a vague problem, a blank screen, a terminal, 27 tabs open and a slightly unreasonable amount of curiosity — and I&apos;m happy.
             </p>
 
-            {/* Vulnerable section — softer */}
             <div className="py-6 border-t border-b border-white/5 my-8">
               <p className="leading-relaxed text-[#D7E2EA]/60 text-[0.9em]">
                 I&apos;m also the kind of person who occasionally looks at a perfectly reasonable amount of ambition and thinks,{" "}
@@ -114,7 +111,6 @@ export default function AboutSection() {
               Outside of product and AI, I&apos;m usually running, strength training, reading something I probably don&apos;t have enough time for, discovering a new café, or going down an unexpected rabbit hole about something completely unrelated.
             </p>
 
-            {/* Paper cuts — humorous beat */}
             <div className="py-8 text-center">
               <p className="leading-relaxed text-[#D7E2EA]/70">
                 And, for reasons I cannot scientifically explain,{" "}
@@ -146,7 +142,6 @@ export default function AboutSection() {
               I want to understand them deeply enough to question them, build them, break them, improve them — and occasionally start again from scratch.
             </p>
 
-            {/* Closing — bold, aspirational */}
             <div className="py-6 text-center mt-8">
               <p className="text-white font-bold text-lg sm:text-xl leading-loose">
                 Interesting problems.<br />
