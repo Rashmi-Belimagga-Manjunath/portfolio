@@ -16,41 +16,28 @@ export default function AboutSection() {
         </h2>
       </FadeIn>
 
-      {/* Vintage Paper Card */}
+      {/* Glass Card */}
       <FadeIn delay={0.1} className="w-full max-w-[750px] mb-16 sm:mb-20 md:mb-24">
         <div
-          className="relative px-8 py-10 sm:px-12 sm:py-14 md:px-16 md:py-18 rounded-sm"
+          className="relative px-8 py-10 sm:px-12 sm:py-14 md:px-16 md:py-18 rounded-2xl"
           style={{
-            background: "linear-gradient(135deg, #f4ecd8 0%, #ebe3cf 25%, #f0e8d4 50%, #e8dfc8 75%, #f2ead6 100%)",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.4), inset 0 0 60px rgba(0,0,0,0.05)",
-            border: "1px solid #d4c9a8",
+            background: "rgba(255, 255, 255, 0.04)",
+            backdropFilter: "blur(20px)",
+            WebkitBackdropFilter: "blur(20px)",
+            border: "1px solid rgba(255, 255, 255, 0.08)",
+            boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05)",
           }}
         >
-          {/* Paper texture overlay */}
+          {/* Subtle glow accent */}
           <div
-            className="absolute inset-0 pointer-events-none opacity-30 rounded-sm"
+            className="absolute -top-px left-1/4 right-1/4 h-px"
             style={{
-              backgroundImage: `repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 28px,
-                rgba(139, 119, 80, 0.08) 28px,
-                rgba(139, 119, 80, 0.08) 29px
-              )`,
-            }}
-          />
-
-          {/* Corner fold effect */}
-          <div
-            className="absolute top-0 right-0 w-12 h-12 sm:w-16 sm:h-16"
-            style={{
-              background: "linear-gradient(225deg, #0C0C0C 0%, #0C0C0C 50%, #d4c9a8 50%, #e8dfc8 100%)",
-              borderBottomLeftRadius: "4px",
+              background: "linear-gradient(90deg, transparent, rgba(182, 0, 168, 0.4), transparent)",
             }}
           />
 
           {/* Content */}
-          <div className="relative z-10 space-y-5 leading-relaxed" style={{ color: "#3a3226", fontSize: "clamp(0.85rem, 1.4vw, 1.05rem)" }}>
+          <div className="relative z-10 space-y-5 leading-relaxed text-[#D7E2EA]" style={{ fontSize: "clamp(0.85rem, 1.4vw, 1.05rem)" }}>
             <p>
               I&apos;ve always been a little obsessed with the question <strong>&ldquo;but why?&rdquo;</strong>
             </p>
