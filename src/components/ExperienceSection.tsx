@@ -32,7 +32,7 @@ export default function ExperienceSection() {
                     border: "1px solid rgba(255, 255, 255, 0.06)",
                   }}
                 >
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
                     <div>
                       <h3 className="text-white font-bold text-lg">{job.role}</h3>
                       <p className="text-[#D7E2EA]/60 text-sm">{job.company} · {job.location}</p>
@@ -42,38 +42,24 @@ export default function ExperienceSection() {
                     </span>
                   </div>
 
-                  <p className="text-[#D7E2EA]/70 text-sm mb-4">{job.description}</p>
-
-                  {job.highlights.length > 0 && (
-                    <ul className="space-y-1.5 mb-4">
-                      {job.highlights.map((h, j) => (
-                        <li key={j} className="text-[#D7E2EA]/50 text-sm flex items-start gap-2">
-                          <span className="text-[#B600A8] mt-1">→</span>
-                          {h}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  {job.metrics.length > 0 && (
-                    <div className="flex flex-wrap gap-3 mt-4">
-                      {job.metrics.map((m, j) => (
-                        <div
-                          key={j}
-                          className="px-3 py-1.5 rounded-lg"
-                          style={{
-                            background: "rgba(182, 0, 168, 0.1)",
-                            border: "1px solid rgba(182, 0, 168, 0.2)",
-                          }}
-                        >
-                          <span className="text-[#B600A8] font-bold text-sm">{m.value}</span>
-                          <span className="text-[#D7E2EA]/50 text-xs ml-1.5">{m.label}</span>
-                        </div>
-                      ))}
+                  <div className="space-y-4 mb-5">
+                    <div>
+                      <p className="text-[#B600A8] text-xs uppercase tracking-widest font-medium mb-1.5">Problem</p>
+                      <p className="text-[#D7E2EA]/70 text-sm leading-relaxed">{job.problem}</p>
                     </div>
-                  )}
 
-                  <div className="flex flex-wrap gap-1.5 mt-4">
+                    <div>
+                      <p className="text-[#B600A8] text-xs uppercase tracking-widest font-medium mb-1.5">What I did</p>
+                      <p className="text-[#D7E2EA]/70 text-sm leading-relaxed">{job.whatIdid}</p>
+                    </div>
+
+                    <div>
+                      <p className="text-[#B600A8] text-xs uppercase tracking-widest font-medium mb-1.5">Outcome</p>
+                      <p className="text-white font-medium text-sm leading-relaxed">{job.outcome}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-1.5">
                     {job.tags.map((tag) => (
                       <span
                         key={tag}

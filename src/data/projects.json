@@ -3,52 +3,84 @@
     "number": "01",
     "name": "VIRELLE",
     "category": "AI Product",
-    "description": "AI-powered matchmaking platform combining behavioral science and NLP. Built end-to-end in 48 hours — from concept to deployment with real-time matching algorithms and adaptive question flows.",
-    "tags": ["AI Agents", "MCP", "FastAPI", "React"],
+    "tagline": "AI-powered matchmaking platform built in 48 hours",
     "liveUrl": "https://rashmi-belimagga-manjunath.github.io/VIRELLE/",
-    "images": [
-      "/images/screenshot-1.png",
-      "/images/screenshot-2.png",
-      "/images/screenshot-3.png"
-    ]
+    "images": ["/images/screenshot-1.png", "/images/screenshot-2.png", "/images/screenshot-3.png"],
+    "caseStudy": {
+      "problem": "Most matchmaking apps rely on surface-level preferences — swipe left on height, swipe right on hobbies. The result is high engagement but low compatibility. People spend hours chatting with people they'll never actually connect with.",
+      "insight": "What if matchmaking understood personality and values, not just preferences? Behavioural science shows that long-term compatibility is driven by emotional patterns, communication styles, and value alignment — none of which traditional apps capture.",
+      "users": "Singles aged 25-40 tired of swiping and wanting meaningful connections.",
+      "hypothesis": "Combining NLP-driven personality profiling with behavioural science models of compatibility can match people on dimensions that actually predict relationship success.",
+      "aiArchitecture": "NLP pipeline analyses personality from text inputs using Big Five and attachment theory models. Matching algorithm weights behavioural signals alongside stated preferences. MCP agent orchestration for real-time conversation analysis.",
+      "decisionsNotBuilt": "No swiping mechanic. No photo-first design. No gamification loops that prioritise engagement over outcomes.",
+      "evaluation": "Tested with 50+ user profiles in 48-hour hackathon. Measured match quality through structured feedback and conversation depth metrics.",
+      "tradeoffs": "Speed vs depth — 48 hours meant sacrificing production-grade NLP for a working prototype. Personality models are approximations, not clinical assessments.",
+      "outcome": "Fully functional prototype with real-time matching, adaptive question flows, and personality-driven compatibility scores.",
+      "next": "Clinical-grade personality assessment, longitudinal compatibility tracking, video date feedback loops."
+    },
+    "tags": ["AI Agents", "MCP", "FastAPI", "React"]
   },
   {
     "number": "02",
     "name": "SOVA",
     "category": "AI Strategy",
-    "description": "Autonomous AI travel companion with a calm, intentional product strategy. Designed the go-to-market framework, pricing model, and feature roadmap for a RAG-powered travel planning experience.",
-    "tags": ["Product Strategy", "RAG", "LLM"],
+    "tagline": "Calm AI for self-reflection, self-trust, and intentional decision-making",
     "liveUrl": "https://github.com/Rashmi-Belimagga-Manjunath/sova-a-calm-journey",
-    "images": [
-      "/images/screenshot-4.png",
-      "/images/screenshot-5.png",
-      "/images/screenshot-6.png"
-    ]
+    "images": ["/images/screenshot-4.png", "/images/screenshot-5.png", "/images/screenshot-6.png"],
+    "caseStudy": {
+      "problem": "Most AI assistants are designed for speed and productivity — they optimise, automate, and push. But the decisions that matter most (career changes, relationships, personal growth) aren't productivity problems. They're reflection problems. People don't need faster answers. They need better questions.",
+      "insight": "The best insights come from slowing down, not speeding up. What if AI created space for reflection rather than rushing to answers? Self-trust isn't built by outsourcing decisions to a chatbot — it's built by having a structured, calm environment to think through hard things.",
+      "users": "Professionals and individuals navigating high-stakes personal decisions who want to think clearly, not just act quickly.",
+      "hypothesis": "A calm AI that asks the right questions at the right moment — without pushing toward a specific outcome — can help people develop clarity, confidence, and self-trust in their decision-making.",
+      "aiArchitecture": "RAG pipeline combining conversation history, reflection patterns, and contextual knowledge. LLM generates prompts and questions based on the user's own expressed values and past reflections, not external templates.",
+      "decisionsNotBuilt": "No productivity metrics. No goal-tracking dashboards. No 'here's what you should do' outputs. Deliberately designed for slowness — the AI holds space, the human decides.",
+      "evaluation": "Competitive analysis of 12 journaling and AI companion apps. User interviews exploring how people actually make hard decisions. Product strategy validated through persona development and go-to-market framework.",
+      "tradeoffs": "Calm vs engaging — a calm product risks feeling passive. Privacy vs utility — reflection data is deeply personal. Monetisation vs accessibility — how do you charge for something that should be available to everyone?",
+      "outcome": "Complete product strategy with pricing model, feature roadmap, and go-to-market framework. Prototype demonstrating calm AI interaction patterns for self-reflection.",
+      "next": "Integration with journaling APIs, voice-based reflection, peer reflection circles with privacy controls."
+    },
+    "tags": ["Product Strategy", "RAG", "LLM", "Calm Tech"]
   },
   {
     "number": "03",
     "name": "RouteForge AI",
     "category": "AI Platform",
-    "description": "AI-powered logistics optimization engine targeting EU SMBs. Built the product strategy, market analysis, and interactive prototype for route planning and fleet management.",
-    "tags": ["AI Strategy", "React", "TypeScript"],
+    "tagline": "AI-powered logistics optimisation for EU SMBs — full product strategy from market to prototype",
     "liveUrl": "https://github.com/Rashmi-Belimagga-Manjunath/routeforgeai",
-    "images": [
-      "/images/screenshot-7.png",
-      "/images/screenshot-8.png",
-      "/images/screenshot-9.png"
-    ]
+    "images": ["/images/screenshot-7.png", "/images/screenshot-8.png", "/images/screenshot-9.png"],
+    "caseStudy": {
+      "problem": "EU SMB logistics operators spend 3-4 hours daily manually planning routes. Enterprise solutions like SAP cost 100K+ and are overbuilt for small fleets. The result: wasted fuel, missed delivery windows, and suboptimal paths. The market is fragmented — no one owns the 'SMB route optimisation' space.",
+      "insight": "The routing problem for a 5-truck fleet is fundamentally different from a 500-truck fleet. SMBs need simplicity, not complexity. But they still need the intelligence — they just can't afford the enterprise price tag or 6-month implementation timeline.",
+      "users": "EU-based logistics operators with 2-20 vehicles. Fleet managers who are also the IT department. Owner-operators who wear five hats and need tools that work in 10 minutes, not 10 weeks.",
+      "hypothesis": "An AI route planner that learns from historical delivery patterns and real-time constraints can reduce fuel costs and delivery times for SMBs at a fraction of enterprise pricing — if the onboarding is dead simple.",
+      "aiArchitecture": "Optimisation engine combining constraint satisfaction with ML-learned route patterns. API-first architecture for integration with existing fleet management tools. React dashboard for visual route planning and fleet overview.",
+      "decisionsNotBuilt": "No full fleet management suite — focused purely on route optimisation to win on one thing. No driver mobile app in v1 — kept scope tight. No real-time GPS tracking — that's a different problem with different regulatory requirements.",
+      "evaluation": "Market sizing identified 2.3B EU SMB logistics market. Competitive analysis of 8 platforms (SAP, Route4Me, OptimoRoute). ICP interviews with fleet operators. Interactive prototype validated against real route scenarios.",
+      "tradeoffs": "Simplicity vs power — SMBs need easy but not toy-like. EU regulations add complexity (driver hours, emissions zones). Balancing algorithmic optimisation with human route knowledge — drivers know things the algorithm doesn't.",
+      "outcome": "Working prototype with route optimisation dashboard. Complete product strategy covering market sizing, ICP definition, competitive positioning, prioritised feature roadmap, and technical feasibility assessment.",
+      "next": "Multi-day route planning, fuel card API integration, predictive maintenance scheduling, driver mobile companion."
+    },
+    "tags": ["Market Sizing", "ICP", "Competitive Analysis", "AI/ML", "Product Strategy", "Prototyping"]
   },
   {
     "number": "04",
     "name": "Digital Story",
     "category": "Research",
-    "description": "Exploring human-AI collaboration in personal safety and narrative generation. Presented research at the EUt+ Dats and Stats Workshop 2026 on responsible AI in sensitive contexts.",
-    "tags": ["AI", "Research", "UX"],
+    "tagline": "Human-AI collaboration in personal safety narratives",
     "liveUrl": "https://digitalstory.lovable.app/",
-    "images": [
-      "/images/screenshot-10.png",
-      "/images/screenshot-11.png",
-      "/images/screenshot-12.png"
-    ]
+    "images": ["/images/screenshot-10.png", "/images/screenshot-11.png", "/images/screenshot-12.png"],
+    "caseStudy": {
+      "problem": "Personal safety narratives — survivor stories, incident reports, witness accounts — are deeply personal but often poorly captured by existing tools. The gap between lived experience and documented account creates barriers to justice and support.",
+      "insight": "AI can help people structure and articulate difficult experiences, but only if designed with extreme sensitivity to context, agency, and emotional safety. The technology must serve the person, not the other way around.",
+      "users": "Survivors of safety incidents, witness account creators, researchers studying narrative reconstruction.",
+      "hypothesis": "A human-AI collaboration framework that gives users full control over narrative construction — with AI offering structure without overriding voice — can produce more complete and authentic safety accounts.",
+      "aiArchitecture": "LLM-assisted narrative structuring with human-in-the-loop at every decision point. No autonomous generation — AI suggests, user decides. Privacy-first architecture with local processing where possible.",
+      "decisionsNotBuilt": "No fully automated report generation. No AI-driven analysis of emotional content. No data persistence by default.",
+      "evaluation": "Research presented at EUt+ Dats and Stats Workshop 2026. Qualitative analysis of narrative completeness and user agency metrics.",
+      "tradeoffs": "AI assistance vs human agency — too much help erodes authentic voice, too little leaves people struggling. Privacy vs utility.",
+      "outcome": "Published research paper. Working prototype. Framework for responsible AI in sensitive contexts.",
+      "next": "Multi-modal narrative support (audio, video), cross-cultural adaptation, clinical validation."
+    },
+    "tags": ["AI", "Research", "UX"]
   }
 ]

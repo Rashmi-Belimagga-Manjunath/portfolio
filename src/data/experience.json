@@ -4,13 +4,9 @@
     "role": "AI/ML Intern",
     "dates": "Jul 2026 – Present",
     "location": "Remote",
-    "description": "Developing AI-powered solutions using Machine Learning and LLMs for real-world business applications.",
-    "highlights": [
-      "Building AI workflows using Python, prompt engineering, RAG, model evaluation",
-      "Integrating ML and LLM capabilities into scalable applications",
-      "Evaluating model performance and reliability"
-    ],
-    "metrics": [],
+    "problem": "Businesses need scalable AI solutions but lack the technical infrastructure to implement them effectively.",
+    "whatIdid": "Building AI workflows using Python, prompt engineering, RAG, and model evaluation. Integrating ML and LLM capabilities into scalable applications for real-world business use cases.",
+    "outcome": "Developing production-ready AI systems that bridge the gap between model capability and business value.",
     "tags": ["AI/ML", "LLMs", "RAG", "Python"]
   },
   {
@@ -18,18 +14,9 @@
     "role": "Product Manager",
     "dates": "Jan 2023 – Dec 2025",
     "location": "India",
-    "description": "Owned enterprise SaaS roadmaps aligned with strategic business objectives and enterprise customer priorities.",
-    "highlights": [
-      "Authored detailed PRDs in Confluence for alignment across engineering, design, and QA",
-      "Conducted competitive and market analysis for quarterly product strategy reviews",
-      "Developed Power BI dashboards analysing feature adoption and user behaviour"
-    ],
-    "metrics": [
-      { "value": "18%", "label": "feature adoption increase" },
-      { "value": "22%", "label": "backlog cycle time reduction" },
-      { "value": "15%", "label": "sprint velocity improvement" },
-      { "value": "30%", "label": "reporting efficiency gain" }
-    ],
+    "problem": "Enterprise SaaS roadmaps were misaligned with customer priorities and lacked data-driven decision making.",
+    "whatIdid": "Owned enterprise roadmaps, authored PRDs in Confluence for cross-functional alignment, conducted competitive analysis for quarterly strategy reviews, and built Power BI dashboards to surface adoption gaps.",
+    "outcome": "↑ 18% feature adoption · ↑ 22% backlog cycle time reduction · ↑ 15% sprint velocity · ↑ 30% reporting efficiency",
     "tags": ["Enterprise SaaS", "Roadmapping", "PRDs", "Power BI"]
   },
   {
@@ -37,18 +24,9 @@
     "role": "Associate Product Manager",
     "dates": "Jul 2019 – Jan 2023",
     "location": "India",
-    "description": "Supported senior PMs in roadmap planning, backlog refinement, and sprint coordination across engineering teams.",
-    "highlights": [
-      "Translated business requirements into detailed user stories and acceptance criteria",
-      "Partnered with customer success to analyse user feedback and recurring pain points",
-      "Designed and executed A/B experiments",
-      "Built KPI dashboards linking product usage to customer behaviour"
-    ],
-    "metrics": [
-      { "value": "15%", "label": "conversion uplift" },
-      { "value": "$3M", "label": "annual revenue impact" },
-      { "value": "4%", "label": "churn reduction" }
-    ],
+    "problem": "Conversion rates were stagnant and churn was growing, but the team lacked visibility into where users were dropping off and why.",
+    "whatIdid": "Translated business requirements into user stories, partnered with customer success to analyse pain points, designed and executed A/B experiments, and built KPI dashboards linking product usage to customer behaviour.",
+    "outcome": "↑ 15% conversion uplift · $3M annual revenue impact · ↓ 4% churn reduction",
     "tags": ["B2B SaaS", "A/B Testing", "KPIs", "User Stories"]
   },
   {
@@ -56,12 +34,9 @@
     "role": "Inside Sales Manager",
     "dates": "Jul 2018 – Dec 2018",
     "location": "India",
-    "description": "Managed outbound sales pipelines for professional certification programmes.",
-    "highlights": [
-      "Conducted needs analysis and positioned solutions aligned with customer goals",
-      "Collaborated with marketing to improve lead qualification and conversion efficiency"
-    ],
-    "metrics": [],
+    "problem": "Professional certification programmes had untapped market potential but lacked targeted outreach and qualification processes.",
+    "whatIdid": "Managed outbound sales pipelines, conducted needs analysis to position solutions aligned with customer goals, and collaborated with marketing to improve lead qualification.",
+    "outcome": "Built a repeatable sales playbook for certification programme conversion.",
     "tags": ["Sales", "Pipeline Management"]
   }
 ]

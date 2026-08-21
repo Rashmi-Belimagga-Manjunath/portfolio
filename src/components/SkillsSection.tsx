@@ -11,31 +11,42 @@ export default function SkillsSection() {
         <h2 className="text-white font-black mb-3" style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}>
           The kit
         </h2>
-        <p className="text-[#D7E2EA]/50 text-sm mb-12 max-w-md">
-          PM skills I practise and the tools I use to ship them.
+        <p className="text-[#D7E2EA]/50 text-sm mb-14 max-w-md">
+          How I think, what I know, and the tools I use to ship.
         </p>
       </FadeIn>
 
-      <FadeIn delay={0.1}>
-        <h3 className="text-white font-bold text-lg mb-5">Skills</h3>
-        <div className="flex flex-wrap gap-2.5 mb-14">
-          {skillsData.skills.map((skill) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
+        {skillsData.clusters.map((cluster, i) => (
+          <FadeIn key={cluster.name} delay={i * 0.1}>
             <div
-              key={skill.name}
-              className="flex items-center gap-2 px-4 py-2 rounded-full text-sm text-[#D7E2EA]/80"
+              className="rounded-2xl p-6 h-full"
               style={{
-                background: "rgba(255, 255, 255, 0.04)",
-                border: "1px solid rgba(255, 255, 255, 0.08)",
+                background: "rgba(255, 255, 255, 0.03)",
+                border: "1px solid rgba(255, 255, 255, 0.06)",
               }}
             >
-              <span>{skill.emoji}</span>
-              <span>{skill.name}</span>
+              <h3 className="text-white font-bold text-lg mb-4">{cluster.name}</h3>
+              <div className="flex flex-wrap gap-2">
+                {cluster.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1.5 rounded-full text-sm text-[#D7E2EA]/70"
+                    style={{
+                      background: "rgba(255, 255, 255, 0.04)",
+                      border: "1px solid rgba(255, 255, 255, 0.08)",
+                    }}
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </FadeIn>
+          </FadeIn>
+        ))}
+      </div>
 
-      <FadeIn delay={0.2}>
+      <FadeIn delay={0.3}>
         <h3 className="text-white font-bold text-lg mb-5">Tools</h3>
         <div className="flex flex-wrap gap-2.5">
           {skillsData.tools.map((tool) => (
