@@ -12,7 +12,7 @@ export default function BlogSection() {
           Writing
         </h2>
         <p className="text-[#D7E2EA]/50 text-sm mb-14 max-w-md">
-          Thoughts on product, AI, and everything in between.
+          I think everything under the sun and try to write about everything under the stars.
         </p>
       </FadeIn>
 
