@@ -23,7 +23,7 @@ export default function ContactSection() {
       <FadeIn delay={0.3}>
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <a
-            href="mailto:rashmimanjunath95@gmail.com"
+            href="mailto:rashmimanjunath95@gmail.com?subject=Hello%20Rashmi"
             className="inline-block rounded-full px-8 py-3 sm:px-10 sm:py-3.5 text-white font-medium uppercase tracking-widest text-xs sm:text-sm md:text-base"
             style={{
               background: "linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)",

@@ -31,8 +31,8 @@ export default function HeroSection() {
       </FadeIn>
 
       {/* Hero Heading */}
-      <FadeIn delay={0.15} y={40} className="mt-6 sm:mt-4 md:-mt-5 px-6 md:px-10 overflow-hidden">
-        <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[7vw] sm:text-[7.5vw] md:text-[8vw] lg:text-[8.5vw]">
+      <FadeIn delay={0.15} y={40} className="mt-16 sm:mt-20 md:mt-24 px-6 md:px-10 overflow-hidden">
+        <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[6vw] sm:text-[6.5vw] md:text-[7vw] lg:text-[7.5vw]">
           Hi, i&apos;m Rashmi Manjunath
         </h1>
       </FadeIn>

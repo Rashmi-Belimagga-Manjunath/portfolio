@@ -11,6 +11,7 @@ const projects = [
     category: "AI Product",
     description: "AI-powered matchmaking platform with behavioral science and NLP. Built end-to-end in 48 hours.",
     tags: ["AI Agents", "MCP", "FastAPI", "React"],
+    liveUrl: "https://rashmi-belimagga-manjunath.github.io/VIRELLE/",
     images: [
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop",
@@ -23,6 +24,7 @@ const projects = [
     category: "AI Strategy",
     description: "Autonomous AI travel companion. Product strategy and go-to-market framework.",
     tags: ["Product Strategy", "RAG", "LLM"],
+    liveUrl: "https://github.com/Rashmi-Belimagga-Manjunath/sova-a-calm-journey",
     images: [
       "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
@@ -35,6 +37,7 @@ const projects = [
     category: "AI Platform",
     description: "AI-powered logistics optimization engine targeting EU SMBs.",
     tags: ["AI Strategy", "React", "TypeScript"],
+    liveUrl: "https://github.com/Rashmi-Belimagga-Manjunath/routeforgeai",
     images: [
       "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1488229297570-58520851e868?w=600&h=400&fit=crop",
@@ -47,6 +50,7 @@ const projects = [
     category: "Research",
     description: "Human-AI collaboration in personal safety and narrative generation.",
     tags: ["AI", "Research", "UX"],
+    liveUrl: "https://digitalstory.lovable.app/",
     images: [
       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
@@ -91,10 +95,12 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
             </div>
           </div>
           <a
-            href="#"
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 text-sm sm:text-base hover:bg-[#D7E2EA]/10 transition-colors self-start"
           >
-            Live Project
+            {project.liveUrl.includes("github.com") ? "View Code" : "View Live"}
           </a>
         </div>
 
