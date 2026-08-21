@@ -24,22 +24,22 @@
     "number": "02",
     "name": "SOVA",
     "category": "AI Strategy",
-    "tagline": "Calm AI for self-reflection, self-trust, and intentional decision-making",
+    "tagline": "Calm self-reflection product for building self-trust through daily rituals",
     "liveUrl": "https://github.com/Rashmi-Belimagga-Manjunath/sova-a-calm-journey",
     "images": ["/images/screenshot-4.png", "/images/screenshot-5.png", "/images/screenshot-6.png"],
     "caseStudy": {
-      "problem": "Most AI assistants are designed for speed and productivity — they optimise, automate, and push. But the decisions that matter most (career changes, relationships, personal growth) aren't productivity problems. They're reflection problems. People don't need faster answers. They need better questions.",
-      "insight": "The best insights come from slowing down, not speeding up. What if AI created space for reflection rather than rushing to answers? Self-trust isn't built by outsourcing decisions to a chatbot — it's built by having a structured, calm environment to think through hard things.",
-      "users": "Professionals and individuals navigating high-stakes personal decisions who want to think clearly, not just act quickly.",
-      "hypothesis": "A calm AI that asks the right questions at the right moment — without pushing toward a specific outcome — can help people develop clarity, confidence, and self-trust in their decision-making.",
-      "aiArchitecture": "RAG pipeline combining conversation history, reflection patterns, and contextual knowledge. LLM generates prompts and questions based on the user's own expressed values and past reflections, not external templates.",
-      "decisionsNotBuilt": "No productivity metrics. No goal-tracking dashboards. No 'here's what you should do' outputs. Deliberately designed for slowness — the AI holds space, the human decides.",
-      "evaluation": "Competitive analysis of 12 journaling and AI companion apps. User interviews exploring how people actually make hard decisions. Product strategy validated through persona development and go-to-market framework.",
-      "tradeoffs": "Calm vs engaging — a calm product risks feeling passive. Privacy vs utility — reflection data is deeply personal. Monetisation vs accessibility — how do you charge for something that should be available to everyone?",
-      "outcome": "Complete product strategy with pricing model, feature roadmap, and go-to-market framework. Prototype demonstrating calm AI interaction patterns for self-reflection.",
-      "next": "Integration with journaling APIs, voice-based reflection, peer reflection circles with privacy controls."
+      "problem": "Most wellness and journaling apps rely on streaks, metrics, and guilt-driven engagement. They turn self-reflection into another productivity task. The result: people abandon them, or worse, start performing for the app instead of reflecting honestly.",
+      "insight": "Self-trust isn't built through gamification. It's built through small, pressure-free daily rituals that feel safe, optional, and supportive. The product should disappear when you need it to — not demand attention.",
+      "users": "Individuals who want to build self-trust and clarity through reflection, but are tired of apps that feel like homework.",
+      "hypothesis": "A calm product that intentionally avoids performance metrics, streaks, and guilt-driven models can create a safer space for genuine self-reflection — and paradoxically, be more engaging because it doesn't demand engagement.",
+      "aiArchitecture": "AI provides gentle, contextual prompts based on the user's own expressed values and past reflections. No external templates. No 'here's what you should do' outputs. The AI holds space, the human decides.",
+      "decisionsNotBuilt": "No streaks. No leaderboards. No daily reminders that feel like nagging. No analytics dashboard. No social features. Deliberately designed to feel safe, optional, and supportive — not demanding.",
+      "evaluation": "Product strategy validated through competitive analysis of 12 journaling and wellness apps. User interviews exploring how people actually build reflective habits. Go-to-market framework developed.",
+      "tradeoffs": "Calm vs discoverable — a calm product risks being invisible. Privacy vs utility — reflection data is deeply personal. Monetisation vs accessibility — how do you charge for something that should feel free?",
+      "outcome": "Complete product strategy with pricing model, feature roadmap, and go-to-market framework. Prototype demonstrating calm interaction patterns for self-reflection.",
+      "next": "Voice-based reflection, peer reflection circles with privacy controls, integration with existing journaling tools."
     },
-    "tags": ["Product Strategy", "RAG", "LLM", "Calm Tech"]
+    "tags": ["Product Strategy", "Calm Tech", "Self-Trust", "AI"]
   },
   {
     "number": "03",
