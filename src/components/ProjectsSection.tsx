@@ -70,19 +70,9 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           {project.tagline}
         </p>
 
-        {/* Screenshots */}
-        <div className="grid grid-cols-5 gap-3 mb-5">
-          <div className="col-span-2 flex flex-col gap-3">
-            <div className="rounded-[20px] sm:rounded-[30px] md:rounded-[40px] overflow-hidden" style={{ height: "clamp(100px, 12vw, 180px)" }}>
-              <img src={project.images[0]} alt="" className="w-full h-full object-cover" />
-            </div>
-            <div className="rounded-[20px] sm:rounded-[30px] md:rounded-[40px] overflow-hidden" style={{ height: "clamp(120px, 16vw, 260px)" }}>
-              <img src={project.images[1]} alt="" className="w-full h-full object-cover" />
-            </div>
-          </div>
-          <div className="col-span-3 rounded-[20px] sm:rounded-[30px] md:rounded-[40px] overflow-hidden">
-            <img src={project.images[2]} alt="" className="w-full h-full object-cover" />
-          </div>
+        {/* Screenshot */}
+        <div className="rounded-[20px] sm:rounded-[30px] md:rounded-[40px] overflow-hidden mb-5" style={{ height: "clamp(200px, 30vw, 400px)" }}>
+          <img src={project.images[0]} alt="" className="w-full h-full object-cover" />
         </div>
 
         {/* Tags */}
