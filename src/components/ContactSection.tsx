@@ -2,65 +2,85 @@
 
 import FadeIn from "./FadeIn";
 
+const contactItems = [
+  {
+    label: "Email",
+    value: "rashmimanjunath95@gmail.com",
+    href: "mailto:rashmimanjunath95@gmail.com?subject=Hello%20Rashmi",
+  },
+  {
+    label: "LinkedIn",
+    value: "/in/rashmi-manjunath",
+    href: "https://linkedin.com/in/rashmi-manjunath",
+  },
+  {
+    label: "GitHub",
+    value: "github.com/Rashmi-Belimagga-Manjunath",
+    href: "https://github.com/Rashmi-Belimagga-Manjunath",
+  },
+  {
+    label: "Phone",
+    value: "+353 894125300",
+    href: "tel:+353894125300",
+  },
+  {
+    label: "Location",
+    value: "Dublin, Ireland",
+    href: null,
+  },
+  {
+    label: "Availability",
+    value: "Open to PM roles · Immediately available",
+    href: null,
+  },
+];
+
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 sm:py-24 md:py-32 px-5 sm:px-8 md:px-10 text-center">
+    <section id="contact" className="py-20 sm:py-24 md:py-32 px-5 sm:px-8 md:px-10 max-w-[700px] mx-auto">
       <FadeIn>
         <h2
-          className="hero-heading font-black uppercase mb-8"
-          style={{ fontSize: "clamp(2rem, 8vw, 100px)" }}
+          className="hero-heading font-black uppercase mb-6"
+          style={{ fontSize: "clamp(2.5rem, 10vw, 100px)" }}
         >
-          Let&apos;s talk
+          Contact
         </h2>
       </FadeIn>
 
-      <FadeIn delay={0.2}>
-        <p className="text-[#D7E2EA]/60 mb-10 max-w-md mx-auto" style={{ fontSize: "clamp(0.9rem, 1.5vw, 1.1rem)" }}>
-          I&apos;m always open to interesting problems, ambitious people, and products worth building.
+      <FadeIn delay={0.1}>
+        <p className="text-[#D7E2EA] text-sm sm:text-base leading-relaxed mb-12 max-w-lg" style={{ fontSize: "clamp(0.85rem, 1.3vw, 1.05rem)" }}>
+          Hiring for a PM role, or want to build from zero?<br />
+          Actively looking for product roles where 0→1 instinct and founder mindset are the point — not a footnote.
         </p>
       </FadeIn>
 
-      <FadeIn delay={0.3}>
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <a
-            href="mailto:rashmimanjunath95@gmail.com?subject=Hello%20Rashmi"
-            className="inline-block rounded-full px-8 py-3 sm:px-10 sm:py-3.5 text-white font-medium uppercase tracking-widest text-xs sm:text-sm md:text-base"
-            style={{
-              background: "linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)",
-              boxShadow: "0px 4px 4px rgba(181, 1, 167, 0.25), inset 4px 4px 12px #7721B1",
-              border: "2px solid rgba(255,255,255,0.8)",
-            }}
-          >
-            Email Me
-          </a>
-          <a
-            href="tel:+353894125300"
-            className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 text-xs sm:text-sm md:text-base hover:bg-[#D7E2EA]/10 transition-colors"
-          >
-            +353 894125300
-          </a>
-          <a
-            href="https://linkedin.com/in/rashmi-manjunath"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 text-xs sm:text-sm md:text-base hover:bg-[#D7E2EA]/10 transition-colors"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/Rashmi-Belimagga-Manjunath"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-full border-2 border-[#D7E2EA] text-[#D7E2EA] font-medium uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 text-xs sm:text-sm md:text-base hover:bg-[#D7E2EA]/10 transition-colors"
-          >
-            GitHub
-          </a>
-        </div>
-      </FadeIn>
+      <div className="space-y-0">
+        {contactItems.map((item, i) => (
+          <FadeIn key={item.label} delay={0.15 + i * 0.05}>
+            <div className="flex flex-col sm:flex-row sm:items-baseline py-4 border-b border-white/10">
+              <span className="text-white font-medium text-sm w-32 flex-shrink-0 mb-1 sm:mb-0">
+                {item.label}
+              </span>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="text-[#D7E2EA]/70 hover:text-white hover:underline transition-colors text-sm"
+                >
+                  {item.value}
+                </a>
+              ) : (
+                <span className="text-[#D7E2EA]/70 text-sm">{item.value}</span>
+              )}
+            </div>
+          </FadeIn>
+        ))}
+      </div>
 
-      <FadeIn delay={0.4}>
-        <p className="text-[#D7E2EA]/30 text-xs">
-          © 2026 · Rashmi Manjunath · All Rights Reserved
+      <FadeIn delay={0.5}>
+        <p className="text-[#D7E2EA]/20 text-xs mt-12">
+          © 2026 · Rashmi Manjunath
         </p>
       </FadeIn>
     </section>
