@@ -37,7 +37,7 @@ export default function HeroSection() {
             className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center mt-[22vh] sm:mt-[24vh]"
             style={{ fontSize: "clamp(2rem, 6vw, 80px)" }}
           >
-            Hi, i&apos;m Rashmi Manjunath
+            Hi, I&apos;m Rashmi Manjunath
           </h1>
         </FadeIn>
       </div>

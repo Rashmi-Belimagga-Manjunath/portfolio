@@ -3,7 +3,7 @@ import CustomCursor from "@/components/CustomCursor";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rashmi -- Product Manager × AI Product Builder",
+  title: "Rashmi — Product Manager × AI Product Builder",
   description:
     "Product Manager building AI products at the intersection of product strategy, data, and human-centred design.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: "en_IE",
     url: "https://rashmi-manjunath.vercel.app",
     siteName: "Rashmi Manjunath",
-    title: "Rashmi -- Product Manager × AI Product Builder",
+    title: "Rashmi — Product Manager × AI Product Builder",
     description:
       "Product Manager building AI products at the intersection of product strategy, data, and human-centred design.",
   },

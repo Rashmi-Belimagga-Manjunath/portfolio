@@ -49,6 +49,10 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           </a>
         </div>
 
+        <p className="text-[#D7E2EA]/60 text-sm sm:text-base leading-relaxed mb-6 max-w-2xl">
+          {project.description}
+        </p>
+
         <div className="grid grid-cols-5 gap-3">
           <div className="col-span-2 flex flex-col gap-3">
             <div className="rounded-[20px] sm:rounded-[30px] md:rounded-[40px] overflow-hidden" style={{ height: "clamp(130px, 16vw, 230px)" }}>

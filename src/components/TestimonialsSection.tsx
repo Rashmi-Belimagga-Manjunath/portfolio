@@ -26,9 +26,10 @@ export default function TestimonialsSection() {
                 border: "1px solid rgba(255, 255, 255, 0.06)",
               }}
             >
-              <span className="text-4xl text-[#B600A8]/30 font-serif leading-none mb-2">&ldquo;</span>
               <p className="text-[#D7E2EA] text-sm sm:text-base leading-relaxed flex-1 italic">
+                <span className="text-3xl text-[#B600A8]/30 font-serif leading-none">&ldquo;</span>
                 {t.quote}
+                <span className="text-3xl text-[#B600A8]/30 font-serif leading-none">&rdquo;</span>
               </p>
               <div className="mt-6 pt-4 border-t border-white/5">
                 <p className="text-white font-medium text-sm">{t.name}</p>

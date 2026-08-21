@@ -3,52 +3,52 @@
     "number": "01",
     "name": "VIRELLE",
     "category": "AI Product",
-    "description": "AI-powered matchmaking platform with behavioral science and NLP. Built end-to-end in 48 hours.",
+    "description": "AI-powered matchmaking platform combining behavioral science and NLP. Built end-to-end in 48 hours — from concept to deployment with real-time matching algorithms and adaptive question flows.",
     "tags": ["AI Agents", "MCP", "FastAPI", "React"],
     "liveUrl": "https://rashmi-belimagga-manjunath.github.io/VIRELLE/",
     "images": [
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=600&fit=crop"
+      "/images/screenshot-1.png",
+      "/images/screenshot-2.png",
+      "/images/screenshot-3.png"
     ]
   },
   {
     "number": "02",
     "name": "SOVA",
     "category": "AI Strategy",
-    "description": "Autonomous AI travel companion. Product strategy and go-to-market framework.",
+    "description": "Autonomous AI travel companion with a calm, intentional product strategy. Designed the go-to-market framework, pricing model, and feature roadmap for a RAG-powered travel planning experience.",
     "tags": ["Product Strategy", "RAG", "LLM"],
     "liveUrl": "https://github.com/Rashmi-Belimagga-Manjunath/sova-a-calm-journey",
     "images": [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&h=600&fit=crop"
+      "/images/screenshot-4.png",
+      "/images/screenshot-5.png",
+      "/images/screenshot-6.png"
     ]
   },
   {
     "number": "03",
     "name": "RouteForge AI",
     "category": "AI Platform",
-    "description": "AI-powered logistics optimization engine targeting EU SMBs.",
+    "description": "AI-powered logistics optimization engine targeting EU SMBs. Built the product strategy, market analysis, and interactive prototype for route planning and fleet management.",
     "tags": ["AI Strategy", "React", "TypeScript"],
     "liveUrl": "https://github.com/Rashmi-Belimagga-Manjunath/routeforgeai",
     "images": [
-      "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1488229297570-58520851e868?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=600&fit=crop"
+      "/images/screenshot-7.png",
+      "/images/screenshot-8.png",
+      "/images/screenshot-9.png"
     ]
   },
   {
     "number": "04",
     "name": "Digital Story",
     "category": "Research",
-    "description": "Human-AI collaboration in personal safety and narrative generation.",
+    "description": "Exploring human-AI collaboration in personal safety and narrative generation. Presented research at the EUt+ Dats and Stats Workshop 2026 on responsible AI in sensitive contexts.",
     "tags": ["AI", "Research", "UX"],
     "liveUrl": "https://digitalstory.lovable.app/",
     "images": [
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=600&h=600&fit=crop"
+      "/images/screenshot-10.png",
+      "/images/screenshot-11.png",
+      "/images/screenshot-12.png"
     ]
   }
 ]
